@@ -2,71 +2,65 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-02T14:34:30.351+01:00"
+        cq:lastModified="{Date}2022-03-02T14:55:29.019+01:00"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/lor/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Header"
+        jcr:title="LOR Header 2"
         sling:resourceType="lor/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="lor/components/container"
-            layout="simple">
+            layout="responsiveGrid">
             <navigation
-                jcr:lastModified="{Date}2022-03-02T13:00:53.470+01:00"
+                jcr:created="{Date}2022-03-02T14:51:03.710+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-02T14:52:05.102+01:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="lor/components/navigation"
-                collectAllPages="false"
+                collectAllPages="true"
                 disableShadowing="false"
                 navigationRoot="/content/lor/us/en/homepage"
-                skipNavigationRoot="false"
-                structureDepth="1"
                 structureStart="1">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
                         offset="0"
                         width="2"/>
-                    <phone
-                        jcr:primaryType="nt:unstructured"
-                        offset="0"
-                        width="2"/>
                 </cq:responsive>
             </navigation>
             <image
-                jcr:created="{Date}2022-03-02T13:30:41.912+01:00"
+                jcr:created="{Date}2022-03-02T14:51:13.075+01:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-02T13:50:21.903+01:00"
+                jcr:lastModified="{Date}2022-03-02T14:55:28.912+01:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="lor/components/image"
                 displayPopupTitle="true"
-                fileName="logo.svg"
                 isDecorative="false">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
-                        offset="0"
+                        offset="2"
                         width="2"/>
                 </cq:responsive>
-                <file/>
             </image>
             <search
-                jcr:created="{Date}2022-03-02T13:37:22.172+01:00"
+                jcr:created="{Date}2022-03-02T14:51:24.861+01:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-02T13:37:22.172+01:00"
+                jcr:lastModified="{Date}2022-03-02T14:51:24.861+01:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="lor/components/search">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
-                        offset="0"
-                        width="1"/>
+                        offset="2"
+                        width="3"/>
                 </cq:responsive>
             </search>
         </root>
