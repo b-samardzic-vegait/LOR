@@ -3,7 +3,8 @@
     cq:adobeTargetExportFormat="html"
     jcr:primaryType="sling:OrderedFolder"
     jcr:title="Site">
-    <lorheader/>
     <header/>
     <footer/>
+    <lorheader/>
+    <lor-footer/>
 </jcr:root>
