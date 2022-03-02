@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/lor" mode="merge"/>
+    <filter root="/content/lor" mode="merge"/>
+    <filter root="/content/dam/lor" mode="merge"/>
+    <filter root="/content/experience-fragments/lor" mode="merge"/>
+</workspaceFilter>
