@@ -237,10 +237,13 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2022-03-04T11:14:54.328+01:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:LOR - Content,/apps/lor/components/form/container]">
+                    components="[group:General,group:Adaptive Form,group:LOR - Content,group:LOR - Form,group:LOR - Structure]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -275,13 +278,10 @@
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2022-03-02T16:51:49.637+01:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:LOR - Content,/apps/lor/components/form/container,/apps/lor/components/navigation]"
-                    layoutDisabled="false">
+                    components="[group:LOR - Content,/apps/lor/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -306,6 +306,56 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_12304539804400
+                    jcr:lastModified="{Date}2022-03-04T12:45:45.550+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Ticket Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/lor/components/ticket]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_12304539804400>
+                <policy_16975837857700
+                    jcr:lastModified="{Date}2022-03-04T12:38:24.158+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tickets Title Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/lor/components/ticket,/apps/lor/components/title]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_16975837857700>
+                <policy_1646394451778
+                    jcr:lastModified="{Date}2022-03-04T12:50:34.404+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Media Teaser Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="/apps/lor/components/mediateaser"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1646394451778>
+                <policy_17860143374000
+                    jcr:lastModified="{Date}2022-03-04T12:53:33.877+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Teaser Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="/apps/lor/components/teaser"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_17860143374000>
+                <policy_18444398803700
+                    jcr:lastModified="{Date}2022-03-04T14:58:10.638+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Standard Content Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/libs/fd/af/components/table,/libs/social/integrations/livefyre/components/carousel,/apps/lor/components/accordion,/apps/lor/components/breadcrumb,/apps/lor/components/carousel,/apps/lor/components/eventcard,/apps/lor/components/image,/apps/lor/components/linkspanel,/apps/lor/components/lorcarousel,/apps/lor/components/mediaplayer,/apps/lor/components/socialmedia,/apps/lor/components/tabs,/apps/lor/components/teaser,/apps/lor/components/text,/apps/lor/components/timeline,/apps/lor/components/title,/apps/lor/components/visitcard]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_18444398803700>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -342,6 +392,7 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <ticket jcr:primaryType="nt:unstructured"/>
         </components>
     </lor>
 </jcr:root>

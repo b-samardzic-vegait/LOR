@@ -2,8 +2,6 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-02T13:45:22.777+01:00"
-        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/lor/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -30,15 +28,7 @@
             <search
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="lor/components/search"
-                searchRoot="/content/lor/us">
-                <cq:responsive jcr:primaryType="nt:unstructured">
-                    <default
-                        jcr:primaryType="nt:unstructured"
-                        behavior="none"
-                        offset="0"
-                        width="7"/>
-                </cq:responsive>
-            </search>
+                searchRoot="/content/lor/us"/>
             <image/>
         </root>
     </jcr:content>
