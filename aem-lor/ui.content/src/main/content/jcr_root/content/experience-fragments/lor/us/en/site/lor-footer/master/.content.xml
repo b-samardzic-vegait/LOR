@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-02T16:52:50.332+01:00"
+        cq:lastModified="{Date}2022-03-07T16:44:17.465+01:00"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/lor/settings/wcm/templates/xf-web-variation"
@@ -12,6 +12,8 @@
         jcr:title="LOR Footer"
         sling:resourceType="lor/components/xfpage">
         <root
+            jcr:lastModified="{Date}2022-03-04T10:05:53.536+01:00"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="lor/components/container"
             layout="responsiveGrid">
@@ -25,29 +27,117 @@
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
-                        offset="0"
-                        width="4"/>
+                        offset="2"
+                        width="2"/>
                 </cq:responsive>
-                <image
-                    jcr:created="{Date}2022-03-02T16:44:49.808+01:00"
+                <container_486114346
+                    jcr:created="{Date}2022-03-04T10:20:39.805+01:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-02T16:46:51.218+01:00"
+                    jcr:lastModified="{Date}2022-03-04T10:21:39.539+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/image"
-                    displayPopupTitle="true"
-                    fileName="logo.svg"
-                    isDecorative="false">
-                    <file/>
-                </image>
-                <sharing
-                    jcr:created="{Date}2022-03-02T16:27:22.719+01:00"
+                    sling:resourceType="lor/components/container"
+                    layout="responsiveGrid">
+                    <image
+                        jcr:created="{Date}2022-03-04T10:20:56.039+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T10:21:06.697+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/image"
+                        displayPopupTitle="true"
+                        fileName="logo.svg"
+                        isDecorative="false">
+                        <file/>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </image>
+                </container_486114346>
+                <container
+                    jcr:created="{Date}2022-03-04T12:59:57.159+01:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-02T16:43:32.055+01:00"
+                    jcr:lastModified="{Date}2022-03-04T13:02:01.151+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/sharing"
-                    id="https://www.google.com/"/>
+                    sling:resourceType="lor/components/container"
+                    layout="responsiveGrid">
+                    <image
+                        jcr:created="{Date}2022-03-04T13:00:31.438+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T13:01:16.618+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/image"
+                        displayPopupTitle="true"
+                        fileName="ico-twitter.svg"
+                        isDecorative="false">
+                        <file/>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </image>
+                    <image_1741501756
+                        jcr:created="{Date}2022-03-04T13:00:42.411+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T13:02:29.164+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/image"
+                        displayPopupTitle="true"
+                        fileName="ico-linkedin.svg"
+                        isDecorative="false">
+                        <file/>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </image_1741501756>
+                    <image_56162984
+                        jcr:created="{Date}2022-03-04T13:02:43.439+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T13:03:10.937+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/image"
+                        displayPopupTitle="true"
+                        fileName="ico-instagram.svg"
+                        isDecorative="false">
+                        <file/>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </image_56162984>
+                    <image_1917856156
+                        jcr:created="{Date}2022-03-04T13:02:55.519+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-04T13:03:29.255+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/image"
+                        displayPopupTitle="true"
+                        fileName="ico-youtube.svg"
+                        isDecorative="false">
+                        <file/>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </image_1917856156>
+                </container>
                 <title
                     jcr:created="{Date}2022-03-02T16:45:09.740+01:00"
                     jcr:createdBy="admin"
@@ -56,7 +146,14 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="HEAD OFFICE"
                     sling:resourceType="lor/components/title"
-                    type="h4"/>
+                    type="h4">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </title>
                 <text
                     jcr:created="{Date}2022-03-02T16:45:21.273+01:00"
                     jcr:createdBy="admin"
@@ -66,41 +163,8 @@
                     sling:resourceType="lor/components/text"
                     text="&lt;p>Bridge Place 1 &amp;amp; 2, Anchor Boulevard&lt;br>&#xd;&#xa;Crossways Dartford, Kent&lt;br>&#xd;&#xa;DA2 6SN, United Kingdom&lt;/p>&#xd;&#xa;"
                     textIsRich="true"/>
+                <image/>
             </container>
-            <container_910077064
-                jcr:created="{Date}2022-03-02T16:48:35.682+01:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-02T16:48:35.682+01:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="lor/components/container">
-                <cq:responsive jcr:primaryType="nt:unstructured">
-                    <default
-                        jcr:primaryType="nt:unstructured"
-                        offset="0"
-                        width="4"/>
-                </cq:responsive>
-                <title
-                    jcr:created="{Date}2022-03-02T16:50:05.765+01:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-02T16:50:17.065+01:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="COMPANY"
-                    sling:resourceType="lor/components/title"
-                    type="h4"/>
-                <navigation
-                    jcr:created="{Date}2022-03-02T16:52:20.540+01:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-02T16:52:39.467+01:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/navigation"
-                    collectAllPages="true"
-                    disableShadowing="false"
-                    navigationRoot="/content/lor/us/en/homepage"
-                    structureStart="1"/>
-            </container_910077064>
             <container_873020203
                 jcr:created="{Date}2022-03-02T16:49:32.342+01:00"
                 jcr:createdBy="admin"
@@ -111,8 +175,83 @@
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
-                        offset="0"
-                        width="4"/>
+                        offset="1"
+                        width="2"/>
+                </cq:responsive>
+                <title_28066774
+                    jcr:created="{Date}2022-03-02T16:50:05.765+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-02T16:50:17.065+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="COMPANY"
+                    sling:resourceType="lor/components/title"
+                    type="h4">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="2"/>
+                    </cq:responsive>
+                </title_28066774>
+                <text
+                    jcr:created="{Date}2022-03-04T12:31:49.035+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-07T16:44:17.419+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>&lt;a href=&quot;/content/lor/us/en/homepage/projects.html&quot;>Projects&lt;/a>&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <text_1800470400
+                    jcr:created="{Date}2022-03-04T12:32:34.840+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:37:27.702+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>&lt;a href=&quot;/content/lor/us/en/homepage/thinking.html&quot;>Thinking&lt;/a>&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <text_1293744330
+                    jcr:created="{Date}2022-03-04T12:32:45.892+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:38:03.195+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>&lt;a href=&quot;/content/lor/us/en/homepage/company.html&quot;>Company&lt;/a>&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <text_1372808912
+                    jcr:created="{Date}2022-03-04T12:32:54.200+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:38:28.341+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>&lt;a href=&quot;/content/lor/us/en/homepage/careers.html&quot;>Careers&lt;/a>&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <text_1577541735
+                    jcr:created="{Date}2022-03-04T12:33:01.920+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:38:54.569+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>&lt;a href=&quot;/content/lor/us/en/homepage/contact.html&quot;>Contact&lt;/a>&lt;/p>&#xa;"
+                    textIsRich="true"/>
+            </container_873020203>
+            <container_2107565
+                jcr:created="{Date}2022-03-04T10:14:17.572+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-04T10:14:17.572+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="lor/components/container">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="2"/>
                 </cq:responsive>
                 <title
                     jcr:created="{Date}2022-03-02T16:50:22.280+01:00"
@@ -123,14 +262,118 @@
                     jcr:title="RESPONSIBILITY"
                     sling:resourceType="lor/components/title"
                     type="h4"/>
-                <navigation
-                    jcr:created="{Date}2022-03-02T16:52:50.304+01:00"
+                <text
+                    jcr:created="{Date}2022-03-04T12:39:11.926+01:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-02T16:52:50.304+01:00"
+                    jcr:lastModified="{Date}2022-03-04T12:41:19.253+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/navigation"/>
-            </container_873020203>
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>Health and safety&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <text_117446068
+                    jcr:created="{Date}2022-03-04T12:39:20.775+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:41:30.958+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>Annual Review&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <text_158197762
+                    jcr:created="{Date}2022-03-04T12:39:29.632+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:42:24.158+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>Insurance Details&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <text_47961522
+                    jcr:created="{Date}2022-03-04T12:39:42.155+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:42:55.112+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>Modern Slavery statement&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <text_1547306898
+                    jcr:created="{Date}2022-03-04T12:39:53.736+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:43:26.987+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>Sitemap&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <text_414068728
+                    jcr:created="{Date}2022-03-04T12:40:03.259+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:43:36.284+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>Disclaimer&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <text_1583133098
+                    jcr:created="{Date}2022-03-04T12:40:13.747+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:43:51.986+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>Accessibility&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <text_52812647
+                    jcr:created="{Date}2022-03-04T12:40:29.783+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:44:57.003+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>Privacy&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <text_1278075908
+                    jcr:created="{Date}2022-03-04T12:40:40.806+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-04T12:45:11.665+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/text"
+                    text="&lt;p>Cookie settings&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+            </container_2107565>
+            <separator
+                jcr:created="{Date}2022-03-03T12:11:35.899+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-04T10:26:35.595+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="lor/components/separator"/>
+            <title
+                jcr:created="{Date}2022-03-03T12:12:04.291+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-03T12:12:14.667+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="© LAING O’ROURKE 2020"
+                sling:resourceType="lor/components/title"
+                type="h4">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="4"/>
+                </cq:responsive>
+            </title>
+            <container_985715846
+                jcr:created="{Date}2022-03-07T16:16:15.866+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-07T16:16:15.866+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="lor/components/container"/>
         </root>
     </jcr:content>
 </jcr:root>
