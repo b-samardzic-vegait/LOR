@@ -3,14 +3,17 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-03-07T16:42:36.857+01:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/lor/settings/wcm/templates/xf-web-variation"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="lor/components/xfpage">
         <root
+            jcr:lastModified="{Date}2022-03-07T16:42:22.320+01:00"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="lor/components/container"
-            editable="{Boolean}true"
-            layout="responsiveGrid"/>
+            editable="{Boolean}true"/>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
                 <phone

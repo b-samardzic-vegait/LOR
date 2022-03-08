@@ -53,7 +53,9 @@
     "webpack-import-glob-loader": "^1.6.3",
     "webpack-merge": "^4.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "aem-fed-mixins": "^1.0.8"
+  },
   "browserslist": [
     "last 2 version",
     "> 1%"

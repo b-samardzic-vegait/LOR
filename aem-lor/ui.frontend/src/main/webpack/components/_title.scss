@@ -1,3 +1,26 @@
 .cmp-title {}
 .cmp-title__text {}
 .cmp-title__link {}
+
+
+.cmp-title--yellow {
+    .cmp-title__text {
+        font-size: 16px;
+        line-height: 38px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color:yellow;
+    }
+}
+
+.cmp-title--white {
+    .cmp-title__text {
+        font-size: 16px;
+        line-height: 38px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color:white;
+    }
+}
