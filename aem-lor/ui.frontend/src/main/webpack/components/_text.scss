@@ -1,8 +1,6 @@
 .cmp-text {}
 .cmp-text__paragraph {}
 
-@import "./node_modules/aem-fed-mixins/mixins/_mixins.scss";
-
 @mixin underline($color) {
 	display: inline-block;
     position: relative;
@@ -26,61 +24,19 @@
     }
 }
 
-/*@mixin hover {
-	@media only screen and (min-width: 10px) {
-		.no-touch &:hover {
-			@content;
-		}
-	}
-}*/
-
 .cmp-text--underline {
     font-size: 14px;
     line-height: 25px;
     position: relative;
     color: white;
-
-    @include underline(white);
-    /*@include hover {
-        &::after {
-            width: 100%;
-        }
-    }*/
 }
-
-/*.cmp-text {
-    font-size: 14px;
-    line-height: 25px;
-    padding-bottom: 0px;
-    display: inline-block;
-    position: relative;
-    color: white;
-  }
-  
-  .cmp-text:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
-  }
-  
-  .cmp-text:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }*/
 
   a:link {
     text-decoration: none;
-    color: white;
+    color: blue;
   }
   
   a:visited {
     text-decoration: none;
-    color: white;
+    color: blue;
   }

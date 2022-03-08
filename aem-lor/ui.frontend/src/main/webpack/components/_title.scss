@@ -3,20 +3,24 @@
 .cmp-title__link {}
 
 
-.cmp-title/*--underline*/ {
+.cmp-title--yellow {
     .cmp-title__text {
-        /*&:after {
-            display: block;
-            width: 84px;
-            padding-top: 8px;
-            content: '';
-            border-bottom: 2px solid;
-        }*/
         font-size: 16px;
         line-height: 38px;
         letter-spacing: 1px;
         margin-bottom: 10px;
         text-transform: uppercase;
         color:yellow;
+    }
+}
+
+.cmp-title--white {
+    .cmp-title__text {
+        font-size: 16px;
+        line-height: 38px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color:white;
     }
 }
