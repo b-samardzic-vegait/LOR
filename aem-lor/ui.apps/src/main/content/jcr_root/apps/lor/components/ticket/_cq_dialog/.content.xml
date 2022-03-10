@@ -56,7 +56,7 @@
                                                 fieldDescription="The description to display."
                                                 fieldLabel="Description"
                                                 name="./description"
-                                                required="{Boolean}true"/>                                               
+                                                required="{Boolean}true"/>
                                         </items>
                                     </column>
                                 </items>

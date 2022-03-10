@@ -318,7 +318,6 @@
                 <policy_1574695586800
                     cq:styleDefaultElement="div"
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-
                     jcr:lastModified="{Date}2022-03-08T12:19:11.364+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
@@ -382,7 +381,7 @@
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2022-03-08T12:37:05.405+01:00"
+                    jcr:lastModified="{Date}2022-03-10T08:47:25.500+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
@@ -390,7 +389,7 @@
                     allowedColorSwatches="[#1e1e1e,#ffffff]"
                     backgroundColorEnabled="true"
                     backgroundImageEnabled="true"
-                    components="[group:LOR - Content,/apps/lor/components/navigation,/apps/lor/components/form/container]"
+                    components="[/apps/lor/components/accordion,/apps/lor/components/breadcrumb,/apps/lor/components/button,/apps/lor/components/byline,/apps/lor/components/container,/apps/lor/components/contentfragment,/apps/lor/components/contentfragmentlist,/apps/lor/components/download,/apps/lor/components/embed,/apps/lor/components/eventcard,/apps/lor/components/experiencefragment,/apps/lor/components/helloworld,/apps/lor/components/image,/apps/lor/components/linkspanel,/apps/lor/components/list,/apps/lor/components/lorcarousel,/apps/lor/components/mediaplayer,/apps/lor/components/mediateaser,/apps/lor/components/pdfviewer,/apps/lor/components/progressbar,/apps/lor/components/separator,/apps/lor/components/socialmedia,/apps/lor/components/sharing,/apps/lor/components/tabs,/apps/lor/components/teaser,/apps/lor/components/text,/apps/lor/components/ticket,/apps/lor/components/timeline,/apps/lor/components/title,/apps/lor/components/visitcard,/apps/lor/components/form/container,/apps/lor/components/navigation,/apps/weretail/components/content/carousel]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
@@ -417,12 +416,16 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_12304539804400
-                    jcr:lastModified="{Date}2022-03-04T12:45:45.550+01:00"
+                    jcr:lastModified="{Date}2022-03-10T15:10:23.220+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Ticket Policy"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/apps/lor/components/ticket]"
+                    allowedColorSwatches="#1e1e1e"
+                    backgroundColorEnabled="true"
+                    backgroundColorSwatchesOnly="true"
+                    backgroundImageEnabled="true"
+                    components="[/apps/lor/components/container,/apps/lor/components/ticket]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_12304539804400>
@@ -437,12 +440,16 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_16975837857700>
                 <policy_1646394451778
-                    jcr:lastModified="{Date}2022-03-04T12:50:34.404+01:00"
+                    jcr:lastModified="{Date}2022-03-10T15:10:04.897+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Media Teaser Policy"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="/apps/lor/components/mediateaser"
+                    allowedColorSwatches="[#1e1e1e,]"
+                    backgroundColorEnabled="true"
+                    backgroundColorSwatchesOnly="true"
+                    backgroundImageEnabled="true"
+                    components="[/apps/lor/components/carousel,/apps/lor/components/container,/apps/lor/components/ticket]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1646394451778>
@@ -523,7 +530,30 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
-            <ticket jcr:primaryType="nt:unstructured"/>
+            <ticket jcr:primaryType="nt:unstructured">
+                <policy_1646920415631
+                    jcr:lastModified="{Date}2022-03-10T15:27:21.915+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Ticket Style 1"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowUpload="true"
+                    disableLazyLoading="true"
+                    jpegQuality="{Long}100">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-ticket--no_background"
+                                    cq:styleId="1646920426691"
+                                    cq:styleLabel="No background"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1646920415631>
+            </ticket>
             <xfpage jcr:primaryType="nt:unstructured">
                 <policy_1646305173945
                     jcr:lastModified="{Date}2022-03-08T12:17:49.494+01:00"
@@ -573,6 +603,7 @@
                     </cq:styleGroups>
                 </policy_1646739429870>
             </navigation>
+            <carousel jcr:primaryType="nt:unstructured"/>
         </components>
     </lor>
     <cq jcr:primaryType="nt:unstructured">
@@ -590,4 +621,11 @@
             <text jcr:primaryType="nt:unstructured"/>
         </components>
     </foundation>
+    <weretail jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <content jcr:primaryType="nt:unstructured">
+                <carousel jcr:primaryType="nt:unstructured"/>
+            </content>
+        </components>
+    </weretail>
 </jcr:root>

@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-08T14:33:46.520+01:00"
+        cq:lastModified="{Date}2022-03-10T15:30:12.384+01:00"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/lor/settings/wcm/templates/xf-web-variation"
@@ -49,13 +49,13 @@
                         displayPopupTitle="true"
                         fileName="logo.svg"
                         isDecorative="false">
-                        <file/>
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"
                                 offset="0"
                                 width="8"/>
                         </cq:responsive>
+                        <file/>
                     </image>
                 </container_486114346>
                 <container
@@ -87,9 +87,6 @@
                         </cq:responsive>
                         <file/>
                     </image>
-                    <image_1741501756/>
-                    <image_1917856156/>
-                    <image_56162984/>
                     <image_2032349385
                         jcr:created="{Date}2022-03-08T14:32:53.610+01:00"
                         jcr:createdBy="admin"
@@ -121,6 +118,7 @@
                         </cq:responsive>
                     </image_1925332794>
                     <image_334988255
+                        cq:styleIds="[Social Media]"
                         jcr:created="{Date}2022-03-08T14:31:26.025+01:00"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2022-03-08T14:32:48.832+01:00"
@@ -135,6 +133,9 @@
                                 width="1"/>
                         </cq:responsive>
                     </image_334988255>
+                    <image_1741501756/>
+                    <image_1917856156/>
+                    <image_56162984/>
                 </container>
                 <title
                     cq:styleIds="[1646742584547]"
@@ -213,10 +214,14 @@
                     cq:styleIds="[1646739452478]"
                     jcr:created="{Date}2022-03-08T12:38:32.094+01:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-08T12:38:32.094+01:00"
+                    jcr:lastModified="{Date}2022-03-10T15:14:40.774+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/navigation"/>
+                    sling:resourceType="lor/components/navigation"
+                    collectAllPages="true"
+                    disableShadowing="false"
+                    navigationRoot="/content/lor/us/en/home-page-example"
+                    structureStart="1"/>
             </container_873020203>
             <container_2107565
                 jcr:created="{Date}2022-03-04T10:14:17.572+01:00"

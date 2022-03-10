@@ -1,0 +1,87 @@
+.cmp-ticket--no_background {
+    .cmp-ticket {
+        background-repeat: no-repeat;
+        background-size: 0% 0%;
+        height: 420px;
+        width: 310px;
+    }
+    .cmp-ticket:hover {
+        border: 1px solid white;
+        background-size: 100% 100%;
+    }
+    .cmp-ticket-header {
+      margin-top: 20px;
+      margin: 20px;
+      color: #ffcd00;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 34px;
+    }
+  
+    .cmp-ticket-title {
+      margin: 20px;
+      color: white;
+      font-weight: 300;
+      margin-bottom: 25px;
+      pointer-events: none;
+      font-size: x-large;
+    }
+    
+    .cmp-ticket-description {
+      margin: 20px;
+      color: white;
+      pointer-events: none;
+      margin-bottom: 20px;
+    }
+    
+    .cmp-ticket-read-more {
+      margin: 10px;
+      color: white;
+      font-weight: 300; 
+      display: block;
+      padding: 2px 5px 8px 6px;
+      margin-bottom: 20px;
+      //border: 1px solid white;
+      @include underline(white);
+      position: relative;
+      visibility: visible;
+      /*.font-ico-chevron-right {
+        display: block;
+        width: auto;
+        max-width: fit-content;
+        color: white;
+        align-self: flex-start;
+        pointer-events: none;
+        &::after {
+          background-color: red;
+        }
+      }*/
+    }
+  
+    .cmp-ticket-icon {
+      $char: '\EA09';
+    }
+  }
+
+  @mixin underline($color) {
+	display: inline-block;
+    position: relative;
+	&::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $color;
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+    }
+    &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        visibility: visible;
+        width: 100%;
+    }
+}

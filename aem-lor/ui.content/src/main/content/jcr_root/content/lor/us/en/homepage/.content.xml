@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2022-03-08T14:39:02.264+01:00"
+        cq:lastModified="{Date}2022-03-10T15:05:11.536+01:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/lor/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
@@ -26,16 +26,13 @@
                     jcr:title="Homepage"
                     sling:resourceType="lor/components/title"/>
                 <container
-                    cq:styleIds="[1646314939785]"
+                    jcr:lastModified="{Date}2022-03-10T15:05:11.534+01:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="lor/components/container"
+                    backgroundColor="#1e1e1e"
                     layout="responsiveGrid"/>
             </container>
         </root>
     </jcr:content>
-    <projects/>
-    <thinking/>
-    <company/>
-    <careers/>
-    <contact/>
 </jcr:root>

@@ -2,14 +2,14 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-02T12:54:44.628+01:00"
+        cq:lastModified="{Date}2022-03-10T15:13:06.845+01:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/lor/settings/wcm/templates/page-content"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Thinking"
-        jcr:uuid="0f630d87-4630-4a1e-bb63-9fc229bb22b9"
+        jcr:title="Projects"
+        jcr:uuid="09acac16-3ec0-49a2-b565-ad9f875f88fb"
         sling:resourceType="lor/components/page">
         <root
             jcr:primaryType="nt:unstructured"

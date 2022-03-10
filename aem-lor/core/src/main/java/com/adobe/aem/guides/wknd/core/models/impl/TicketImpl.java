@@ -50,9 +50,9 @@ public class TicketImpl implements Ticket {
     @PostConstruct
     private void init() {
         // set the image object
-        ticketHeader = "Expertise";
+        /*ticketHeader = "Expertise";
         title = "Incorporating the latest innovations in high rise design and construction.";
-        description = "Faucibus est litora mattis vehicula primis arcu eu vivamus";
+        description = "Faucibus est litora mattis vehicula primis arcu eu vivamus";*/
         image = modelFactory.getModelFromWrappedRequest(request, request.getResource(), Image.class);
     }
 
@@ -99,5 +99,14 @@ public class TicketImpl implements Ticket {
     private Image getImage() {
         return image;
     }
-}
 
+    public String getImageSrc() { 
+        if (image != null) { 
+            return image.getSrc(); 
+        } 
+        return null; 
+    } 
+    public String getBackgroundImageSrc() { 
+        return "background-image:url(" + this.getImageSrc() + ")"; 
+    } 
+}

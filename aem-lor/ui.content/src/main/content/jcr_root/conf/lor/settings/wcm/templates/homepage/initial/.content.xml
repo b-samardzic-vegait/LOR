@@ -2,6 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2022-03-10T15:04:43.674+01:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/lor/settings/wcm/templates/homepage"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="lor/components/page">
@@ -19,17 +21,105 @@
             <container_1824707551
                 jcr:created="{Date}2022-03-04T11:19:06.502+01:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-04T11:23:08.544+01:00"
+                jcr:lastModified="{Date}2022-03-10T15:02:40.316+01:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="lor/components/container"/>
+                sling:resourceType="lor/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:created="{Date}2022-03-10T15:02:23.896+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-10T15:02:23.896+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="3"/>
+                    </cq:responsive>
+                </container>
+                <container_1200230659
+                    jcr:created="{Date}2022-03-10T15:02:45.735+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-10T15:02:45.735+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </container_1200230659>
+                <container_6576108
+                    jcr:created="{Date}2022-03-10T15:02:55.023+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-10T15:02:55.023+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </container_6576108>
+            </container_1824707551>
             <container_766904834
                 jcr:created="{Date}2022-03-04T11:19:12.494+01:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-04T11:23:12.318+01:00"
+                jcr:lastModified="{Date}2022-03-10T15:04:13.668+01:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="lor/components/container"/>
+                sling:resourceType="lor/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:created="{Date}2022-03-10T15:04:17.945+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-10T15:04:17.945+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="3"/>
+                    </cq:responsive>
+                </container>
+                <container_38716209
+                    jcr:created="{Date}2022-03-10T15:04:27.449+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-10T15:04:27.449+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </container_38716209>
+                <container_1024110350
+                    jcr:created="{Date}2022-03-10T15:04:37.800+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-10T15:04:37.800+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </container_1024110350>
+            </container_766904834>
             <container
                 jcr:lastModified="{Date}2022-03-04T12:05:40.776+01:00"
                 jcr:lastModifiedBy="admin"
