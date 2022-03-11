@@ -1,0 +1,22 @@
+<div class="card__content" data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.TicketPressRelease">
+    <div class="card__top">
+        <span class="card__tag tag">Press release</span>
+    </div>
+    <div class="card__bottom">
+        <span class="card__date">${ticket.tag}</span>
+        <h2 class="card__title">${ticket.title}</h2>
+        <p class="card__text">${ticket.description}</p>
+        <div class="cmp-byline__image"
+            data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/download/v1/download' }">
+        </div>
+        <a href="javascript:;" class="link link--download" target="_blank" data-size="98kb"> Download PDF <span class="icon font-ico-chevron-right"></span>
+        </a>
+        <div class="card__btn">
+            <a href="javascript:;" class="btn">
+                <span class="icon font-ico-arrow"><span class="sr-only">Arrow right</span></span>
+                <span class="btn__outline">Read More</span>
+            </a>
+        </div>
+    </div>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
