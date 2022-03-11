@@ -281,12 +281,12 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2022-03-08T12:30:05.390+01:00"
+                    jcr:lastModified="{Date}2022-03-11T09:50:52.222+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    allowedColorSwatches="#1e1e1e"
+                    allowedColorSwatches="[#1e1e1e,ffffff]"
                     backgroundColorEnabled="true"
                     backgroundColorSwatchesOnly="true"
                     components="[group:LOR - Content,/apps/lor/components/form/container,group:LOR - Structure]"
@@ -532,7 +532,34 @@
             </page>
             <ticket jcr:primaryType="nt:unstructured">
                 <policy_1646920415631
-                    jcr:lastModified="{Date}2022-03-10T15:27:21.915+01:00"
+                    jcr:lastModified="{Date}2022-03-11T09:10:41.530+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Ticket Carousel Style"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowUpload="true"
+                    disableLazyLoading="true"
+                    jpegQuality="{Long}100">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-ticket--carousel"
+                                    cq:styleId="1646920426691"
+                                    cq:styleLabel="Carousel"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-ticket--no-background"
+                                    cq:styleId="1646986226974"
+                                    cq:styleLabel="No background"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1646920415631>
+                <policy_3217735776189300
+                    jcr:lastModified="{Date}2022-03-11T09:12:44.015+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Ticket Style 1"
@@ -546,13 +573,18 @@
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
                                     cq:styleClasses="cmp-ticket--no_background"
-                                    cq:styleId="1646920426691"
+                                    cq:styleId="1646985698726"
                                     cq:styleLabel="No background"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-ticket--carousel"
+                                    cq:styleId="1646986313721"
+                                    cq:styleLabel="Carousel Style"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
                     </cq:styleGroups>
-                </policy_1646920415631>
+                </policy_3217735776189300>
             </ticket>
             <xfpage jcr:primaryType="nt:unstructured">
                 <policy_1646305173945

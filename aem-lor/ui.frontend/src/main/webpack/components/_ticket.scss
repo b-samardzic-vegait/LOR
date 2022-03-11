@@ -85,3 +85,77 @@
         width: 100%;
     }
 }
+
+
+
+.cmp-ticket--carousel {
+    .cmp-ticket {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .cmp-ticket-header {
+      visibility: hidden;
+    }
+    .cmp-ticket-data {
+        //position: absolute;
+        background-color: white;
+        background-size: 100% 100%;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        width: 30%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+    }
+    /*.cmp-ticket-data-white {
+      background-color: white;
+      margin-top: 200px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      width: 30%;
+      height: 50%;
+  }*/
+  
+    .cmp-ticket-title {
+      margin: 20px;
+      color: black;
+      font-weight: 300;
+      margin-bottom: 25px;
+      pointer-events: none;
+      font-size: x-large;
+    }
+    
+    .cmp-ticket-description {
+      margin: 20px;
+      color: black;
+      pointer-events: none;
+      margin-bottom: 20px;
+    }
+    
+    .cmp-ticket-read-more {
+      margin: 10px;
+      color: black;
+      font-weight: 300; 
+      display: block;
+      padding: 2px 5px 8px 6px;
+      margin-bottom: 20px;
+      border: 1px solid white;
+      //@include underline(white);
+      position: relative;
+      visibility: visible;
+      /*.font-ico-chevron-right {
+        display: block;
+        width: auto;
+        max-width: fit-content;
+        color: white;
+        align-self: flex-start;
+        pointer-events: none;
+        &::after {
+          background-color: red;
+        }
+      }*/
+    }
+  }

@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-10T15:29:18.680+01:00"
+        cq:lastModified="{Date}2022-03-11T10:57:50.954+01:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/lor/settings/wcm/templates/homepage"
         jcr:primaryType="cq:PageContent"
@@ -20,40 +20,47 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="lor/components/container">
                 <carousel
-                    jcr:created="{Date}2022-03-10T15:15:31.119+01:00"
+                    jcr:created="{Date}2022-03-11T10:53:46.685+01:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-10T15:15:59.753+01:00"
+                    jcr:lastModified="{Date}2022-03-11T10:56:37.234+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="lor/components/carousel"
                     autopauseDisabled="false"
                     autoplay="false"
                     delay="5000">
-                    <item_1646921754240
-                        cq:panelTitle="Ticket 1"
-                        jcr:lastModified="{Date}2022-03-10T15:16:21.286+01:00"
+                    <item_1646992477220
+                        cq:panelTitle="Ticket 2"
+                        cq:styleIds="[1646986313721]"
+                        jcr:lastModified="{Date}2022-03-11T10:56:52.813+01:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="lor/components/ticket"
                         description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
-                        fileReference="/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg"
+                        fileReference="/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg"
                         ticketHeader="Our experience"
                         title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend."/>
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="11"/>
-                    </cq:responsive>
+                    <item_1646992588499
+                        cq:panelTitle="Ticket 1"
+                        cq:styleIds="[1646986313721]"
+                        jcr:lastModified="{Date}2022-03-11T10:57:48.369+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/ticket"
+                        description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                        fileReference="/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg"
+                        ticketHeader="Our experience"
+                        title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend."/>
                 </carousel>
             </container_1465655066>
             <container_1824707551
                 jcr:created="{Date}2022-03-04T11:19:06.502+01:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-10T15:02:40.316+01:00"
+                jcr:lastModified="{Date}2022-03-11T10:37:42.436+01:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="lor/components/container"
+                backgroundColor="#1e1e1e"
                 layout="responsiveGrid">
                 <container
                     jcr:created="{Date}2022-03-10T15:02:23.896+01:00"
@@ -69,7 +76,7 @@
                             width="3"/>
                     </cq:responsive>
                     <ticket
-                        cq:styleIds="[1646920426691]"
+                        cq:styleIds="[1646985698726]"
                         jcr:created="{Date}2022-03-10T15:17:35.799+01:00"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2022-03-10T15:18:14.515+01:00"
@@ -95,7 +102,7 @@
                             width="3"/>
                     </cq:responsive>
                     <ticket
-                        cq:styleIds="[1646920426691]"
+                        cq:styleIds="[1646985698726]"
                         jcr:created="{Date}2022-03-10T15:17:40.662+01:00"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2022-03-10T15:18:31.804+01:00"
@@ -107,7 +114,7 @@
                         ticketHeader="Our experience"
                         title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend."/>
                     <ticket_251250468
-                        cq:styleIds="[1646920426691]"
+                        cq:styleIds="[1646985698726]"
                         jcr:created="{Date}2022-03-10T15:17:45.279+01:00"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2022-03-10T15:18:53.816+01:00"
@@ -119,7 +126,7 @@
                         ticketHeader="Our experience"
                         title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend."/>
                     <ticket_2117067730
-                        cq:styleIds="[1646920426691]"
+                        cq:styleIds="[1646985698726]"
                         jcr:created="{Date}2022-03-10T15:17:48.343+01:00"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2022-03-10T15:19:02.505+01:00"
@@ -145,7 +152,7 @@
                             width="3"/>
                     </cq:responsive>
                     <ticket
-                        cq:styleIds="[1646920426691]"
+                        cq:styleIds="[1646985698726]"
                         jcr:created="{Date}2022-03-10T15:17:51.000+01:00"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2022-03-10T15:19:16.442+01:00"
@@ -157,7 +164,7 @@
                         ticketHeader="Our experience"
                         title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend."/>
                     <ticket_1288268642
-                        cq:styleIds="[1646920426691]"
+                        cq:styleIds="[1646985698726]"
                         jcr:created="{Date}2022-03-10T15:17:53.527+01:00"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2022-03-10T15:19:30.464+01:00"
