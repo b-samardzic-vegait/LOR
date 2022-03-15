@@ -1,5 +1,7 @@
 <div class="article animation__fade-up article--blue js-article-row cmp-ticket-latest" 
-    data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.TicketLatest">
+    data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.TicketLatest"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!ticket.empty}" style="${ticket.backgroundImageSrc @ context='styleString'}">
     <div class="article__bg-image has-cover js-article-bg-img" style="${ticket.backgroundImageSrc @ context='styleString'}" aria-hidden="true"></div>
     <div class="article__content">
         <div class="article__top">

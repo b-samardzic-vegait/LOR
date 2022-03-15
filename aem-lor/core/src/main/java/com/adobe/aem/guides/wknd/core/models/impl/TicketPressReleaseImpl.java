@@ -12,7 +12,13 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.apache.sling.models.factory.ModelFactory;
-import com.adobe.aem.guides.wknd.core.models.TicketLatest;
+import org.joda.time.DateTime;
+
+import java.text.DateFormat;  
+import java.text.SimpleDateFormat;  
+import java.util.Date;  
+import java.util.Calendar;
+
 import com.adobe.aem.guides.wknd.core.models.TicketPressRelease;
 import com.adobe.cq.wcm.core.components.models.Download;
 

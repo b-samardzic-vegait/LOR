@@ -1,4 +1,7 @@
-<div class="card__content" data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.TicketPressRelease">
+<div class="card__content" 
+    data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.TicketPressRelease"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!ticket.empty}" style="${ticket.backgroundImageSrc @ context='styleString'}">   
     <div class="card__top">
         <span class="card__tag tag">Press release</span>
     </div>

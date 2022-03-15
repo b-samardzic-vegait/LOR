@@ -11,7 +11,8 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
-import org.apache.sling.models.factory.ModelFactory;
+import org.apache.sling.models.factory.ModelFactory;  
+
 import com.adobe.aem.guides.wknd.core.models.TicketLatest;
 import com.adobe.cq.wcm.core.components.models.Image;
 
@@ -61,7 +62,7 @@ public class TicketLatestImpl implements TicketLatest {
         description = "Faucibus est litora mattis vehicula primis arcu eu vivamus";
         tag = "tag";
         subtitle = "subtitle";*/
-        image = modelFactory.getModelFromWrappedRequest(request, request.getResource(), Image.class);
+        image = modelFactory.getModelFromWrappedRequest(request, request.getResource(), Image.class);        
     }
 
     @Override

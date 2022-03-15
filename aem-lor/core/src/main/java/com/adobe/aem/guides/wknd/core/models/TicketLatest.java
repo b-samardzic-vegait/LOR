@@ -7,19 +7,24 @@ public interface TicketLatest {
     */
     String getTicketHeader();
 
-        /***
+    /***
     * @return a string to display as the name.
     */
     String getTag();
 
+    /***
+    * @return a string to display as the title.
+    */
     String getTitle();
 
-        /***
-    * @return a string to display as the name.
+    /***
+    * @return a string to display as the subtitle.
     */
-
     String getSubtitle();
 
+    /***
+    * @return a string to display as the description.
+    */
     String getDescription();
 
     /***
