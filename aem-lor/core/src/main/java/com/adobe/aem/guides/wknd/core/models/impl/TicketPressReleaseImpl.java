@@ -84,22 +84,24 @@ public class TicketPressReleaseImpl implements TicketPressRelease {
     public boolean isEmpty() {
         final Download componentDownload = getDownload();
 
-        if (StringUtils.isBlank(tag)) {
-            // Ticket header is missing, but required
-            return true;
-        } else if (StringUtils.isBlank(title)) {
-            // Title is missing, but required
-            return true;
-        } else if (StringUtils.isBlank(description)) {
-            // Description is missing, but required
-            return true;
-        } else if (componentDownload == null) {
-            // A valid image is required
-            return true;
-        } else {
-            // Everything is populated, so this component is not considered empty
-            return false;
-        }
+        // if (StringUtils.isBlank(tag)) {
+        //     // Ticket header is missing, but required
+        //     return true;
+        // } else if (StringUtils.isBlank(title)) {
+        //     // Title is missing, but required
+        //     return true;
+        // } else if (StringUtils.isBlank(description)) {
+        //     // Description is missing, but required
+        //     return true;
+        // } else if (componentDownload == null) {
+        //     // A valid image is required
+        //     return true;
+        // } else {
+        //     // Everything is populated, so this component is not considered empty
+        //     return false;
+        // }
+
+        return false;
     }
 
     /**
