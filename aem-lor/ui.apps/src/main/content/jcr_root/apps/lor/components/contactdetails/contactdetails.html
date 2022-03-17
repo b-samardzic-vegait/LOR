@@ -1,0 +1,43 @@
+<div data-sly-use.contactdetails="com.adobe.aem.guides.wknd.core.models.ContactDetails"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!contactdetails.empty}">
+
+    <section class="get-in-touch">
+        <div class="wrap wrap--small">
+            <h3 class="get-in-touch__title h5">Contact</h3>
+            <div class="get-in-touch__container">
+                <div class="get-in-touch__left">
+                    <div alt="get-in-touch image" class="get-in-touch__img"
+                        data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v2/image' }">
+                    </div>
+                    <div class="get-in-touch__info">
+                        <span class="get-in-touch__name text">${contactdetails.name}</span>
+                        <span class="get-in-touch__position">${contactdetails.position}</span>
+                    </div>
+                </div>
+                <div class="get-in-touch__right">
+                    <a class="btn" href="javascript:;">
+                        <span class="icon font-ico-arrow"></span>
+                        <span class="btn__outline">Get in touch</span>
+                    </a>
+                    <div class="get-in-touch__right-holder">
+                        <div class="get-in-touch__cols">
+                            <div class="get-in-touch__col">
+                                <span class="get-in-touch__col-title">Email</span>
+                                <a class="get-in-touch__link" href="javascript:;">${contactdetails.email}</a>
+                            </div>
+                            <div class="get-in-touch__col">
+                                <span class="get-in-touch__col-title">Phone</span>
+                                <a class="get-in-touch__link" href="javascript:;">${contactdetails.phone}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
+
+
