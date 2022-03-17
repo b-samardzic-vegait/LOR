@@ -440,7 +440,7 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_16975837857700>
                 <policy_1646394451778
-                    jcr:lastModified="{Date}2022-03-10T15:10:04.897+01:00"
+                    jcr:lastModified="{Date}2022-03-17T10:10:46.299+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Media Teaser Policy"
@@ -449,7 +449,7 @@
                     backgroundColorEnabled="true"
                     backgroundColorSwatchesOnly="true"
                     backgroundImageEnabled="true"
-                    components="[/apps/lor/components/carousel,/apps/lor/components/container,/apps/lor/components/ticket]"
+                    components="[group:LOR - Content,group:LOR - Form,group:LOR - Structure]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1646394451778>
