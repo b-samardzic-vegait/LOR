@@ -559,7 +559,7 @@
                     </cq:styleGroups>
                 </policy_1646920415631>
                 <policy_3217735776189300
-                    jcr:lastModified="{Date}2022-03-11T09:12:44.015+01:00"
+                    jcr:lastModified="{Date}2022-03-17T14:07:41.283+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Ticket Style 1"
@@ -572,14 +572,9 @@
                         <item0 jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
-                                    cq:styleClasses="cmp-ticket--no_background"
+                                    cq:styleClasses="custom-style--no_background"
                                     cq:styleId="1646985698726"
                                     cq:styleLabel="No background"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item1
-                                    cq:styleClasses="cmp-ticket--carousel"
-                                    cq:styleId="1646986313721"
-                                    cq:styleLabel="Carousel Style"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
@@ -636,6 +631,35 @@
                 </policy_1646739429870>
             </navigation>
             <carousel jcr:primaryType="nt:unstructured"/>
+            <ticketlatest jcr:primaryType="nt:unstructured">
+                <policy_1647522391880
+                    jcr:lastModified="{Date}2022-03-17T14:07:14.445+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Colors"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowUpload="true"
+                    disableLazyLoading="true"
+                    jpegQuality="{Long}100">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="article-color--blue"
+                                    cq:styleId="1647522419526"
+                                    cq:styleLabel="Blue"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="article-color--red"
+                                    cq:styleId="1647522423469"
+                                    cq:styleLabel="Red"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1647522391880>
+            </ticketlatest>
         </components>
     </lor>
     <cq jcr:primaryType="nt:unstructured">

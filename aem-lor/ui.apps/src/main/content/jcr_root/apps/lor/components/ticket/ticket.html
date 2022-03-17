@@ -1,18 +1,16 @@
-<!--/* byline.html */-->
-<!--/* byline.html */-->
 <div class="expertise__box animation js-expertise-box js-animation cmp-ticket" 
     data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.Ticket"
     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-    data-sly-test.hasContent="${!ticket.empty}" style="${ticket.backgroundImageSrc @ context='styleString'}">
-    <div class="cmp-ticket-data">
-    <!--<div class="cmp-ticket-data-white">-->
-        <span class="expertise__tag tag expertise__tag--box js-expertise-tag cmp-ticket-header">${ticket.ticketHeader}</span>
-        <h3 class="expertise__title expertise__title--box h5 color-white cmp-ticket-title">${ticket.title}</h3>
-        <p class="expertise__text expertise__text--box color-white cmp-ticket-description">${ticket.description}</p>
-        <span class="link cmp-ticket-read-more"> Read more <span class="icon font-ico-chevron-right"></span>
+    data-sly-test.hasContent="${!ticket.empty}" >
+    <div class="expertise__box-link animation__fade-up">
+		<div class="expertise__image js-expertise-image no-image" style="${ticket.backgroundImageSrc @ context='styleString'}" aria-hidden="true"></div>
+        <span class="expertise__tag tag expertise__tag--box js-expertise-tag color">${ticket.ticketHeader}</span>
+        <h3 class="expertise__title expertise__title--box h5 color-white color">${ticket.title}</h3>
+        <p class="expertise__text expertise__text--box color-white color">${ticket.description}</p>
+        <span class="link color"> Read more <span class="icon font-ico-chevron-right"></span>
         </span>
     </div>
 </div>
+
+
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
-
-

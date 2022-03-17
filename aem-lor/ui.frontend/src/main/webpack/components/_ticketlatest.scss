@@ -1,0 +1,14 @@
+
+.article-color--blue {
+    .article-color::after {
+        background: -webkit-gradient(linear, left top, left bottom, from(#00a7b5), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 167, 181, 0)), to(rgba(0, 167, 181, 0.5)));
+        background: linear-gradient(180deg, #00a7b5 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 167, 181, 0) 0%, rgba(0, 167, 181, 0.5) 100%);
+    }
+}
+
+.article-color--red {
+    .article-color::after {
+        background: -webkit-gradient(linear, left top, left bottom, from(#d80027), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(216, 0, 39, 0)), to(rgba(216, 0, 39, 0.5)));
+        background: linear-gradient(180deg, #d80027 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(216, 0, 39, 0) 0%, rgba(216, 0, 39, 0.5) 100%);
+    }
+}
