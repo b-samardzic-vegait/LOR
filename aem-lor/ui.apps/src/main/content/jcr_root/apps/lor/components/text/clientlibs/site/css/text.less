@@ -1,0 +1,124 @@
+/*
+ *  Copyright 2018 Adobe
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+/*li::before {content: "•"; color: #07828c}*/
+.cmp-text {
+	li {
+		position: relative;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 32px;
+	}
+	ul {
+		&:not(.tabs__links):not(.floating-block__list) {
+			padding-left: 31px;
+			margin-bottom: 100px;
+		}
+		li {
+			&:not(.tabs__links-item) {
+				margin-bottom: 20px;
+				&::before {
+					content: '';
+					position: absolute;
+					top: 12px;
+					left: -32px;
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					background-color: #07828c;
+				}
+			}
+		}
+	}
+	ol {
+		padding-left: 31px;
+		counter-reset: ol-list;
+		margin-bottom: 100px;
+		li {
+			margin-bottom: 20px;
+			&::before {
+				counter-increment: ol-list;
+				content: counter(ol-list)'.';
+				position: absolute;
+				color: #07828c;
+				top: 0;
+				left: -28px;
+				font-size: 18px;
+				line-height: 32px;
+			}
+		}
+	}
+	ul, ol {
+		ul {
+			&:not(.tabs__links) {
+				margin-bottom: 20px;
+				padding-top: 20px;
+			}
+			li {
+				&:not(.tabs__links-item) {
+					&::before {
+						content: '';
+						position: absolute;
+						top: 14px;
+						left: -32px;
+						width: 12px;
+						height: 2px;
+						border-radius: 0;
+						background-color: #fe5000;
+					}
+				}
+			}
+		}
+	}
+	/*@include media-breakpoint-down(sm) {
+		ul {
+			&:not(.tabs__links):not(.floating-block__list)  {
+				padding-left: 31px;
+			}
+			li {
+				&:not(.tabs__links-item) {
+					&::before {
+						content: '';
+						top: 8px;
+						left: -20px;
+						width: 8px;
+						height: 8px;
+					}
+				}
+			}
+		}
+		li {
+			font-size: 16px;
+			line-height: 26px;
+		}
+		ol {
+			margin-bottom: 30px;
+		}
+		ol,
+		ul {
+			ul {
+				li {
+					&:not(.tabs__links-item) {
+						&::before {
+							top: 11px;
+							width: 10px;
+						}
+					}
+				}
+			}
+		}
+	}*/
+}
