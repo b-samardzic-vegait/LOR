@@ -1,0 +1,26 @@
+<div class="expertise__box animation js-expertise-box js-animation" 
+    data-sly-use.accordioncustom="com.adobe.aem.guides.wknd.core.models.AccordionCustom"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!accordioncustom.empty}" >
+    <section class="accordions js-accordion">
+        <div class="wrap wrap--smaller">
+            <div class="accordions__wrap" data-sly-list.item="${accordioncustom.accordionWithMap}">
+                <div class="accordions__holder">
+                    <button class="accordions__button js-accordion-button" type="button">${item.section}<span class="accordions__divider" aria-hidden="true"></span>
+                        <span class="icon font-ico-chevron-down" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordions__content js-accordion-content" style="display: none;">
+                        <div class="accordions__text">
+                            <div class="rte">
+                                <p>${item.text}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
