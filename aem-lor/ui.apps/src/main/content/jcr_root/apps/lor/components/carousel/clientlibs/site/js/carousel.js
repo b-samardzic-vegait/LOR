@@ -36,6 +36,7 @@ const hero = {
 	$slides: $('.js-slide'),
 	$heroImage: $('.js-responsive-image'),
 	activeClass: 'animation--started',
+    activeItemClass: 'cmp-carousel__item--active',
 	pauseClass: 'animation--paused',
 	btnClass: 'controls__btn--paused',
 	interval: 8000,
@@ -64,9 +65,14 @@ const hero = {
 	},
 
 	automaticSlider: function(item, ind) {
-		const $slides = $(item).find('.js-slide');
+		//const $slides = $(item).find('.js-slide');
+        const $slides = $(item).find('.cmp-carousel__item');
+
 		//const $allVideos = $slides.find('video');
-		const $currentSlide = $slides.eq(ind);
+        const $currentItemSlide = $slides.eq(ind);
+        const $currentSlide = $slides.eq(ind).find('.js-slide');
+        console.log($currentSlide)
+		//const $currentSlide = $slides.eq(ind);
 		const $currnetVideo = $currentSlide.find('video');
 		const $currentIframe = $currentSlide.find('iframe');
 		const currentSlideNum = $(item).find('.js-slider-current');
@@ -77,8 +83,12 @@ const hero = {
 			const url = $currentIframe.parent().data('iframe') + this.autoplayIframe;
 			$currentIframe[0].src = url;
 		}
-		$slides.not($currentSlide).removeClass(this.activeClass);
-		$currentSlide.addClass(this.activeClass);
+        $slides.not($currentItemSlide).removeClass(this.activeItemClass);
+		$currentItemSlide.addClass(this.activeItemClass);
+        $slides.not($currentItemSlide).find('.js-slide').removeClass(this.activeItemClass);
+        $currentSlide.addClass(this.activeClass);
+		//$slides.not($currentSlide).removeClass(this.activeClass);
+		//$currentSlide.addClass(this.activeClass);
 		currentSlideNum.html(ind + 1);
 	},
 
