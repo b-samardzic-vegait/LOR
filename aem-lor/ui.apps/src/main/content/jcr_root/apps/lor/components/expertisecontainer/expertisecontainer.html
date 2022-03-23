@@ -1,0 +1,27 @@
+<sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer">
+	<div data-sly-element="${currentStyle.elementType}" id="${container.id}" class="${properties.customCssClass}">
+        <sly data-sly-resource="${resource @ resourceType='wcm/foundation/components/responsivegrid'}" 
+            data-sly-test="${(wcmmode.edit)}"
+        ></sly>
+        <section class="expertise bg-grey-dark js-expertise">
+            <div class="expertise__bkg-image has-cover js-expertise-bkg-image" aria-hidden="true"></div>
+            <div class="expertise__bkg-text" aria-hidden="true">
+                <div class="expertise__track">
+                    <span class="expertise__track-text js-expertise-bkg-text"></span>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="expertise__wrap">
+                    <sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer">
+                        <sly data-sly-test.responsive="${container.layout == 'RESPONSIVE_GRID'}"
+                             data-sly-use.responsiveGridTemplate="responsiveGrid.html"
+                             data-sly-call="${responsiveGridTemplate.responsiveGrid @ container=container}"></sly>
+                        <sly data-sly-test.simple="${!responsive}"
+                             data-sly-use.simpleTemplate="simple.html"
+                             data-sly-call="${simpleTemplate.simple @ container=container}"></sly>
+                    </sly>
+                </div>
+            </div>
+        </section>
+    </div>
+</sly>
