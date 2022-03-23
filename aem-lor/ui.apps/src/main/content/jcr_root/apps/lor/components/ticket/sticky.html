@@ -1,0 +1,20 @@
+<template data-sly-template.sticky="${ @ ticket}">
+    <div class="expertise__sticky sticky__box js-sticky"
+        data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+        data-sly-test.hasContent="${!ticket.empty}"
+        >
+        <span class="expertise__tag tag expertise__tag--main animation__fade-down">${ticket.ticketHeader}</span>
+        <div class="expertise__title-wrap">
+            <h2 class="expertise__title expertise__title--main animation__text-rises h4 color-white">${ticket.title}</h2>
+        </div>
+        <p class="expertise__text expertise__text--main animation__fade color-white">${ticket.description}</p>
+		<div class="card__btn">
+            <a href="javascript:;" class="btn btn--white animation__fade">
+                <span class="icon font-ico-arrow"><span class="sr-only">Arrow right</span></span>
+                <span class="btn__outline">Read More</span>
+            </a>
+        </div>
+    </div>
+    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
+
+</template>
