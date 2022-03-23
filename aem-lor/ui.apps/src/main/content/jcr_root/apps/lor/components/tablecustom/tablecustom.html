@@ -1,0 +1,37 @@
+<div class="expertise__box animation js-expertise-box js-animation" 
+    data-sly-use.tablecustom="com.adobe.aem.guides.wknd.core.models.TableCustom"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!tablecustom.empty}" >
+    <section>
+        <div class="table table--no-padding">
+            <div class="wrap wrap--small">
+                <div class="rte">
+                    <div class="table">
+                        <div class="table__wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>${tablecustom.titleone}</th>
+                                        <th>${tablecustom.titletwo}</th>
+                                        <th>${tablecustom.titlethree}</th>
+                                        <th>${tablecustom.titlefour}</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-sly-list.item="${tablecustom.tableWithMap}">
+                                    <tr>
+                                        <td>${item.cellone}</td>
+                                        <td>${item.celltwo}</td>
+                                        <td>${item.cellthree}</td>
+                                        <td>${item.cellfour}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
