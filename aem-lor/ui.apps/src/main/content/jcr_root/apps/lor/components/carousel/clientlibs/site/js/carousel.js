@@ -2,7 +2,7 @@
 $(window).on('load', () => {
 	setTimeout(() => {
 		$('html').addClass('loaded');
-    	//console.log("0")
+    	console.log("0")
 	}, 10);
 });
 
@@ -18,7 +18,7 @@ $(window).on('load', () => {
 document.addEventListener("DOMContentLoaded", callCarouselInit);*/
 
 $(document).ready(() => {
-	//console.log("1")
+	console.log("1")
     hero.init();
     //hero.initFirst();
     //hero.automaticSlider();
@@ -43,6 +43,7 @@ const hero = {
 	autoplayIframe: '?background=1&loop=1&byline=0&title=0&controls=0&muted=1&autoplay=1',
 
 	init: function() {
+        console.log("2")
 		if (!this.$slider.length) return;
 		this.setMobileImage();
 		this.loadSlider();
@@ -71,7 +72,7 @@ const hero = {
 		//const $allVideos = $slides.find('video');
         const $currentItemSlide = $slides.eq(ind);
         const $currentSlide = $slides.eq(ind).find('.js-slide');
-        console.log($currentSlide)
+        //console.log($currentSlide)
 		//const $currentSlide = $slides.eq(ind);
 		const $currnetVideo = $currentSlide.find('video');
 		const $currentIframe = $currentSlide.find('iframe');

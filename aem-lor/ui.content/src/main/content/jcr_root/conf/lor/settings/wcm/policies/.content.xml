@@ -416,7 +416,7 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_12304539804400
-                    jcr:lastModified="{Date}2022-03-11T16:03:52.822+01:00"
+                    jcr:lastModified="{Date}2022-03-22T16:54:49.535+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Ticket Policy"
@@ -425,7 +425,7 @@
                     backgroundColorEnabled="true"
                     backgroundColorSwatchesOnly="true"
                     backgroundImageEnabled="true"
-                    components="[/apps/lor/components/container,/apps/lor/components/ticket,/apps/lor/components/ticketlatest,/apps/lor/components/ticketpressrelease]"
+                    components="[/apps/lor/components/container,/apps/lor/components/expertisecontainer,/apps/lor/components/ticket,/apps/lor/components/ticketlatest,/apps/lor/components/ticketpressrelease]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_12304539804400>
@@ -494,6 +494,40 @@
                         </item0>
                     </cq:styleGroups>
                 </policy_2604653853561900>
+                <policy_4253032245078900
+                    cq:styleDefaultElement="div"
+                    jcr:lastModified="{Date}2022-03-23T10:00:36.319+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Expertise Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="expertise__main js-expertise-boxes"
+                                    cq:styleElement="div"
+                                    cq:styleId="1647957786089"
+                                    cq:styleLabel="Expertise Boxes"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="expertise__main animation sticky js-animation"
+                                    cq:styleElement="div"
+                                    cq:styleId="1647957799744"
+                                    cq:styleLabel="Sticky Expertise Boxes"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="expertise__main js-expertise-boxes expertise__boxes--padding"
+                                    cq:styleElement="div"
+                                    cq:styleId="1648026015214"
+                                    cq:styleLabel="Expertise Boxes with Padding"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_4253032245078900>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -660,6 +694,7 @@
                     </cq:styleGroups>
                 </policy_1647522391880>
             </ticketlatest>
+            <expertisecontainer jcr:primaryType="nt:unstructured"/>
         </components>
     </lor>
     <cq jcr:primaryType="nt:unstructured">
