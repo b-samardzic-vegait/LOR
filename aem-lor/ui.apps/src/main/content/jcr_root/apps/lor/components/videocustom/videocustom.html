@@ -1,0 +1,31 @@
+<div 
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+    <section class="dfma">
+        <div class="wrap wrap--small">
+            <h2 class="dfma__title h5">${properties.title}</h2>
+            <div class="dfma__video-wrap js-dfma">
+                <div class="dfma__video js-video js-dfma-video slider__media--playing" data-auto="true"><video muted="" autoplay="" loop="" playsinline="" class="video video--video"><source src='${properties.navigationRoot}' type="video/mp4"></video></div>
+                <div class="dfma__controls control">
+                    <div class="dfma__progress js-dfma-progress">
+                        <span class="dfma__buffer"></span>
+                        <span class="dfma__bar js-dfma-bar" style="width: 79.6776%;"></span>
+                        <div class="dfma__icon-wrap">
+                            <span class="dfma__icon dfma__icon--inner js-dfma-icon-inner" style="left: 79.6776%; margin-left: 5px;"></span>
+                            <span class="dfma__icon dfma__icon--outter js-dfma-icon-outter" style="left: 79.6776%;"></span>
+                        </div>
+                        <div
+                            data-sly-resource="${ '.' @ resourceType = '/libs/settings/dam/video' }">
+                        </div>
+                        <div class="dfma__box js-dfma-box" style="left: 67.6776%;">
+                            <span class="dfma__box-text hash">${properties.description}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
+
+
