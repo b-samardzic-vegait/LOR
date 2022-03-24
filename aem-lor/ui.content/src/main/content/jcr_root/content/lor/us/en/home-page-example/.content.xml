@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-23T11:52:00.826+01:00"
+        cq:lastModified="{Date}2022-03-24T15:20:53.935+01:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/lor/settings/wcm/templates/homepage"
         jcr:primaryType="cq:PageContent"
@@ -77,15 +77,15 @@
                                 width="12"/>
                         </cq:responsive>
                         <ticket
-                            cq:styleIds="[1646985698726]"
                             jcr:created="{Date}2022-03-23T11:45:53.386+01:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-23T11:46:36.758+01:00"
+                            jcr:lastModified="{Date}2022-03-24T12:00:41.960+01:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="lor/components/ticket"
                             description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
                             fileReference="/content/dam/lor/asset.jpg"
+                            layout="sticky"
                             ticketHeader="Our experience"
                             title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend."/>
                     </container>
@@ -204,94 +204,281 @@
                 sling:resourceType="lor/components/container"
                 layout="responsiveGrid">
                 <container
-                    jcr:created="{Date}2022-03-10T15:04:17.945+01:00"
+                    cq:styleIds="[1648113027850]"
+                    jcr:created="{Date}2022-03-24T12:12:46.441+01:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-10T15:04:17.945+01:00"
+                    jcr:lastModified="{Date}2022-03-24T13:20:50.652+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/container">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
+                    sling:resourceType="lor/components/container"
+                    layout="responsiveGrid">
+                    <container
+                        cq:styleIds="[1648122588303]"
+                        jcr:created="{Date}2022-03-24T12:13:01.041+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-24T13:22:07.564+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/container"
+                        layout="responsiveGrid">
+                        <container
+                            cq:styleIds="[1648117628804]"
+                            jcr:created="{Date}2022-03-24T12:14:24.745+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-24T13:20:31.734+01:00"
+                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="3"/>
-                    </cq:responsive>
-                    <ticket
-                        cq:styleIds="[1646985698726]"
-                        jcr:created="{Date}2022-03-11T11:36:04.842+01:00"
+                            sling:resourceType="lor/components/container"
+                            layout="responsiveGrid">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="4"/>
+                                <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="NaN"
+                                    width="NaN"/>
+                            </cq:responsive>
+                            <ticket
+                                cq:styleIds="[1646985698726]"
+                                jcr:created="{Date}2022-03-24T12:15:50.017+01:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-24T14:15:17.193+01:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticket"
+                                description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                                fileReference="/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg"
+                                layout="sticky"
+                                ticketHeader="Our experience"
+                                title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend.">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <phone
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="0"/>
+                                </cq:responsive>
+                            </ticket>
+                        </container>
+                        <container_470328793
+                            cq:styleIds="[1648117628804]"
+                            jcr:created="{Date}2022-03-24T12:14:34.929+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-24T13:20:37.635+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/container"
+                            layout="responsiveGrid">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="4"/>
+                                <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="NaN"
+                                    width="NaN"/>
+                            </cq:responsive>
+                            <ticketlatest
+                                cq:styleIds="[1647522419526]"
+                                jcr:created="{Date}2022-03-24T12:16:15.229+01:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-24T12:16:32.373+01:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                                fileReference="/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg"
+                                subtitle="By Jack Daniel Lloyd Davies"
+                                tag="United Kingdom"
+                                ticketHeader="Thinking"
+                                title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend.">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <phone
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="0"/>
+                                </cq:responsive>
+                            </ticketlatest>
+                        </container_470328793>
+                        <container_1529429113
+                            cq:styleIds="[1648117628804]"
+                            jcr:created="{Date}2022-03-24T12:14:51.961+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-24T13:20:41.914+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/container"
+                            layout="responsiveGrid">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="4"/>
+                                <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="12"/>
+                            </cq:responsive>
+                            <ticketlatest
+                                cq:styleIds="[1647522423469]"
+                                jcr:created="{Date}2022-03-24T12:16:18.298+01:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-24T12:16:42.783+01:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                                fileReference="/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg"
+                                subtitle="By Jack Daniel Lloyd Davies"
+                                tag="08.06.20"
+                                ticketHeader="Thinking"
+                                title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend.">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <phone
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="NaN"
+                                        width="NaN"/>
+                                </cq:responsive>
+                            </ticketlatest>
+                        </container_1529429113>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="2"
+                                width="8"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                    </container>
+                    <container_853202095
+                        cq:styleIds="[1648122588303]"
+                        jcr:created="{Date}2022-03-24T12:13:08.873+01:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-11T11:36:32.475+01:00"
+                        jcr:lastModified="{Date}2022-03-24T12:14:19.828+01:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="lor/components/ticket"
-                        description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
-                        fileReference="/content/dam/wknd-events/wknd-events.jpg"
-                        ticketHeader="Our experience"
-                        title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend."/>
-                    <ticketpressrelease
-                        jcr:created="{Date}2022-03-11T16:04:15.188+01:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-11T16:04:15.188+01:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="lor/components/ticketpressrelease"/>
+                        sling:resourceType="lor/components/container"
+                        layout="responsiveGrid">
+                        <container
+                            jcr:created="{Date}2022-03-24T12:15:01.521+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-24T13:20:55.402+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/container"
+                            layout="responsiveGrid">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                                <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="0"/>
+                            </cq:responsive>
+                            <ticketlatest
+                                jcr:created="{Date}2022-03-24T13:45:07.035+01:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-24T15:20:53.927+01:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                                downloadPdf="/content/dam/lor/ico-twitter.svg"
+                                fileReference="/content/dam/lor/ico-twitter.svg"
+                                layout="pressrelease"
+                                navigationRoot="/content/dam/lor/ico-youtube.svg"
+                                subtitle="By Jack Daniel Lloyd Davies"
+                                tag="08.06.20"
+                                ticketHeader="press release"
+                                title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend."/>
+                        </container>
+                        <container_1899704690
+                            jcr:created="{Date}2022-03-24T12:15:11.345+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-24T13:20:58.875+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/container"
+                            layout="responsiveGrid">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                            </cq:responsive>
+                            <ticketlatest_copy
+                                jcr:created="{Date}2022-03-24T13:45:07.035+01:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-24T15:02:37.627+01:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                                downloadPdf="/content/dam/lor/ico-youtube.svg"
+                                fileReference="/content/dam/lor/ico-twitter.svg"
+                                layout="pressrelease"
+                                navigationRoot="/content/dam/lor/ico-youtube.svg"
+                                subtitle="By Jack Daniel Lloyd Davies"
+                                tag="08.06.20"
+                                ticketHeader="press release"
+                                title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend.">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                            </ticketlatest_copy>
+                        </container_1899704690>
+                        <container_1272602980
+                            jcr:created="{Date}2022-03-24T12:15:18.513+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-24T13:21:03.049+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/container"
+                            layout="responsiveGrid">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                            </cq:responsive>
+                            <ticketlatest_copy
+                                jcr:created="{Date}2022-03-24T13:45:07.035+01:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-24T15:02:37.627+01:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                                downloadPdf="/content/dam/lor/ico-youtube.svg"
+                                fileReference="/content/dam/lor/ico-twitter.svg"
+                                layout="pressrelease"
+                                navigationRoot="/content/dam/lor/ico-youtube.svg"
+                                subtitle="By Jack Daniel Lloyd Davies"
+                                tag="08.06.20"
+                                ticketHeader="press release"
+                                title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend."/>
+                        </container_1272602980>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="2"
+                                width="9"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                offset="NaN"
+                                width="NaN"/>
+                        </cq:responsive>
+                    </container_853202095>
                 </container>
-                <container_38716209
-                    jcr:created="{Date}2022-03-10T15:04:27.449+01:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-10T15:04:27.449+01:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/container">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="3"/>
-                    </cq:responsive>
-                    <ticketlatest
-                        cq:styleIds="[1647522419526]"
-                        jcr:created="{Date}2022-03-11T13:05:13.602+01:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-17T14:09:13.847+01:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="lor/components/ticketlatest"
-                        description="Faucibus est litora mattis vehicula primis arcu eu vivamus parturient arcu scelerisque."
-                        fileReference="/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg"
-                        subtitle="By Jack Daniel Lloyd Davies"
-                        tag="08.06.20"
-                        ticketHeader="Thinking"
-                        title="Building the tallest building in North Sydney"/>
-                </container_38716209>
-                <container_1024110350
-                    jcr:created="{Date}2022-03-10T15:04:37.800+01:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-10T15:04:37.800+01:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/container">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="3"/>
-                    </cq:responsive>
-                    <ticketlatest_copy
-                        cq:styleIds="[1647522423469]"
-                        jcr:created="{Date}2022-03-11T13:05:13.602+01:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-17T14:09:16.095+01:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="lor/components/ticketlatest"
-                        description="Faucibus est litora mattis vehicula primis arcu eu vivamus parturient arcu scelerisque."
-                        fileReference="/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg"
-                        subtitle="By Jack Daniel Lloyd Davies"
-                        tag="08.06.20"
-                        ticketHeader="Thinking"
-                        title="Building the tallest building in North Sydney"/>
-                </container_1024110350>
             </container_766904834>
             <container
                 jcr:lastModified="{Date}2022-03-10T15:11:51.429+01:00"

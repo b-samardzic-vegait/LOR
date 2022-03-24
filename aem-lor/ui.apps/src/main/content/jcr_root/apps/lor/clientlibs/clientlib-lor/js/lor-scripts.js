@@ -1,4 +1,4 @@
-
+//
 $(window).on('load', () => {
 	setTimeout(() => {
 		$('html').addClass('loaded');
@@ -10,6 +10,7 @@ $(document).ready(() => {
 	//console.log("111")
     animations.init();
     expertise.init();
+    latestNews.init();
 });
 
 
@@ -228,3 +229,32 @@ const expertise = {
 		}
 	}
 };
+
+const latestNews = {
+	$articleBtn: $('.js-article-button'),
+	$bannerBg: $('.js-article-bg-img'),
+	bgClass: 'article__bg-image--zoom',
+
+	init: function() {
+		this.bgZoom();
+	},
+
+	bgZoom: function() {
+		if (!this.$articleBtn.length) return;
+		const windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
+		if (windowWidth > 1200) {
+			const _this = this;
+			this.$articleBtn.on({
+				mouseenter: function() {
+					const $bkgImage = $(this).closest('.js-article-row').find('.js-article-bg-img');
+					$bkgImage.addClass(_this.bgClass);
+				},
+				mouseleave: () => {
+					_this.$bannerBg.removeClass(_this.bgClass);
+				}
+			});
+		}
+	}
+
+};
+
