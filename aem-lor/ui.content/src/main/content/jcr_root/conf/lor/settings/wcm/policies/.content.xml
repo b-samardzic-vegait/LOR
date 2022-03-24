@@ -496,7 +496,7 @@
                 </policy_2604653853561900>
                 <policy_4253032245078900
                     cq:styleDefaultElement="div"
-                    jcr:lastModified="{Date}2022-03-23T10:00:36.319+01:00"
+                    jcr:lastModified="{Date}2022-03-24T15:12:30.432+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Expertise Policy"
@@ -523,6 +523,24 @@
                                     cq:styleElement="div"
                                     cq:styleId="1648026015214"
                                     cq:styleLabel="Expertise Boxes with Padding"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="latest-news  js-bg-animation"
+                                    cq:styleElement="div"
+                                    cq:styleId="1648113027850"
+                                    cq:styleLabel="Latest News Container"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="col-xl-4 col-md-6 animation js-animation"
+                                    cq:styleElement="div"
+                                    cq:styleId="1648117628804"
+                                    cq:styleLabel="Latest News Ticket Container"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item5
+                                    cq:styleClasses="wrap"
+                                    cq:styleElement="div"
+                                    cq:styleId="1648122588303"
+                                    cq:styleLabel="Wrap"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
@@ -593,7 +611,7 @@
                     </cq:styleGroups>
                 </policy_1646920415631>
                 <policy_3217735776189300
-                    jcr:lastModified="{Date}2022-03-17T14:07:41.283+01:00"
+                    jcr:lastModified="{Date}2022-03-24T10:07:28.715+01:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Ticket Style 1"
