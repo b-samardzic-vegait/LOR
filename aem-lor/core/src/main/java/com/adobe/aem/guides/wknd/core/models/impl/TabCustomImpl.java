@@ -45,7 +45,7 @@ public class TabCustomImpl implements TabCustom {
             if (tabDetail != null) {
                 for (Resource tab : tabDetail.getChildren()) {
                     Map<String, String> tabMap = new HashMap<>();
-                    tabMap.put("section", tab.getValueMap().get("section", String.class));
+                    tabMap.put("tabname", tab.getValueMap().get("tabname", String.class));
                     tabMap.put("text", tab.getValueMap().get("text", String.class));
                     tabs.add(tabMap);
                 }
