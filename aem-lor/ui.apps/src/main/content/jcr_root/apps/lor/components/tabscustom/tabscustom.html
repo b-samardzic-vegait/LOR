@@ -1,0 +1,38 @@
+
+<div
+    data-sly-use.tabcustom="com.adobe.aem.guides.wknd.core.models.TabCustom"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!tabcustom.empty}" >
+
+    <section class="tabs js-tabs">
+        <div class="wrap wrap--small">
+            <div class="tabs__container">
+                
+                <ul class="tabs__item-container" role="menubar" data-sly-list.item="${tabcustom.tabWithMap}">		
+                    <li class="tabs__item" role="menuitem" >
+                        <button class="tabs__button tabs__button--desktop js-switch-tabs tabs__button--active" type="button">${item.tabname}</button>
+                    </li>
+                </ul>
+                
+                <div class="tabs__holder" data-sly-list.item="${tabcustom.tabWithMap}">
+                    <div class="tabs__content-item">
+                        <button class="tabs__button tabs__button--mobile js-mobile-tab" type="button"> ${item.tabname} <span class="tabs__button-divider" aria-hidden="true"></span>
+                            <span class="icon font-ico-chevron-down tabs__icon-rotate" aria-hidden="true"></span>
+                        </button>
+                        <div class="tabs__content js-content-tab" style="display: block;">
+                            <div class="tabs__text">
+                                <div class="rte">
+                                    <p>${item.text}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>	
+
+</div>
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>

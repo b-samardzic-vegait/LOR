@@ -1,0 +1,22 @@
+<template data-sly-template.pressrelease="${ @ ticket}">
+    <div class="card__content card card--home" 
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!ticket.empty}">   
+    <div class="card__top">
+	<span class="card__tag tag">${ticket.ticketHeader}.</span>
+    </div>
+    <div class="card__bottom">
+        <span class="card__date">${ticket.tag}</span>
+        <h2 class="card__title">${ticket.title}</h2>
+        <p class="card__text">${ticket.description}</p>
+		<a href="${properties.downloadPdf}" class="link link--download" target="_blank" data-size="98kb"> Download PDF <span class="icon font-ico-chevron-right" download></span></a>
+        <div class="card__btn">
+            <a href="javascript:;" class="btn">
+				<span class="icon color-black"><img class="font-ico-arrow" src="/content/dam/lor/resources/ico-arrow.svg" style="width:13px;height:13px;margin:13px;"><span class="sr-only">Arrow right</span></span>
+                <span class="btn__outline">Read More</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
+</template>

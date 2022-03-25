@@ -1,28 +1,9 @@
-<div class="article article-color animation__fade-up js-article-row cmp-ticket-latest" 
-    data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.TicketLatest"
-    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-    data-sly-test.hasContent="${!ticket.empty}" style="${ticket.backgroundImageSrc @ context='styleString'}">
-    <div class="article__bg-image has-cover js-article-bg-img" style="${ticket.backgroundImageSrc @ context='styleString'}" aria-hidden="true"></div>
-    <div class="article__content">
-        <div class="article__top">
-            <span class="article__subtitle tag">${ticket.ticketHeader}</span>
-            <div class="article__right">
-                <div class="article__time">
-                    <span class="icon font-ico-clock"><span class="sr-only">Icon clock</span></span>
-                    <span class="article__time-text">6 min read</span>
-                </div>
-            </div>
-        </div>
-        <div class="article__bottom">
-            <span class="article__text-smaller">${ticket.tag}</span>
-            <h3 class="article__title">${ticket.title}</h3>
-            <span class="article__author">${ticket.subtitle}</span>
-            <p class="article__text">${ticket.description}</p>
-        </div>
-    </div>
-    <a href="javascript:;" class="btn js-article-button">
-        <span class="icon font-ico-arrow"></span>
-        <span class="btn__outline">See more</span>
-    </a>
-</div>
-<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
+	<sly data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.TicketLatest">
+         <sly data-sly-test.pressrelease="${properties.layout == 'pressrelease'}"
+             data-sly-use.pressreleaseTemplate="pressrelease.html"
+             data-sly-call="${pressreleaseTemplate.pressrelease @ ticket=ticket}"></sly>
+         <sly data-sly-test.simple="${!pressrelease}"
+             data-sly-use.simpleTemplate="simple.html"
+             data-sly-call="${simpleTemplate.simple @ ticket=ticket}"></sly>
+    </sly>
+

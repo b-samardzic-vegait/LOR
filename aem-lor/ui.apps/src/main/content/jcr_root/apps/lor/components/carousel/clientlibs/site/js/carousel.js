@@ -42,6 +42,8 @@ const hero = {
 	interval: 8000,
 	autoplayIframe: '?background=1&loop=1&byline=0&title=0&controls=0&muted=1&autoplay=1',
 
+
+
 	init: function() {
         console.log("2")
 		if (!this.$slider.length) return;
@@ -146,9 +148,11 @@ const hero = {
 			});
 			// play-pause slider
 			$slidePlayBtn.on('click', () => {
+    			$pauseImg = $('.pause-img');
 				if (isPaused) {
 					// play
 					isPaused = false;
+    				$pauseImg.attr('src', '/content/dam/lor/resources/ico-pause.svg'); 
 					time = Math.round((100 - (progressLineWidth * 100 / progressFullWidt)) * 80);
 					$(this).find('.animation--started').removeClass(_this.pauseClass);
 					$slidePlayBtn.removeClass(_this.btnClass);
@@ -159,6 +163,7 @@ const hero = {
 				} else {
 					// pause
 					isPaused = true;
+    				$pauseImg.attr('src', '/content/dam/lor/resources/ico-play.svg'); 
 					clearInterval(autoSlide);
 					clearTimeout(timeOutSlide);
 					$(this).find('.animation--started').addClass(_this.pauseClass);

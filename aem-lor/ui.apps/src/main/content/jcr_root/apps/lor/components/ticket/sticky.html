@@ -1,16 +1,16 @@
 <template data-sly-template.sticky="${ @ ticket}">
-    <div class="expertise__sticky sticky__box js-sticky"
+    <div class="expertise__sticky sticky__box js-sticky latest-news__intro"
         data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
         data-sly-test.hasContent="${!ticket.empty}"
         >
-        <span class="expertise__tag tag expertise__tag--main animation__fade-down">${ticket.ticketHeader}</span>
+        <span class="expertise__tag expertise__tag--main tag animation__fade-down color-black">${ticket.ticketHeader}</span>
         <div class="expertise__title-wrap">
-            <h2 class="expertise__title expertise__title--main animation__text-rises h4 color-white">${ticket.title}</h2>
+            <h2 class="expertise__title expertise__title--main h4 animation__text-rises color-white color-black">${ticket.title}</h2>
         </div>
-        <p class="expertise__text expertise__text--main animation__fade color-white">${ticket.description}</p>
+        <p class="expertise__text expertise__text--main animation__fade color-white color-black">${ticket.description}</p>
 		<div class="card__btn">
-            <a href="javascript:;" class="btn btn--white animation__fade">
-                <span class="icon font-ico-arrow"><span class="sr-only">Arrow right</span></span>
+            <a href="javascript:;" class="btn btn--white animation__fade color-black">
+				<span class="icon color-black"><img class="font-ico-arrow" src="/content/dam/lor/resources/ico-arrow.svg" style="width:13px;height:13px;margin:13px;"><span class="sr-only">Arrow right</span></span>
                 <span class="btn__outline">Read More</span>
             </a>
         </div>
@@ -18,3 +18,4 @@
     <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
 
 </template>
+
