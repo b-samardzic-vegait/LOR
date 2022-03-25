@@ -1,0 +1,52 @@
+<div 
+    data-sly-use.imageslidercustom="com.adobe.aem.guides.wknd.core.models.ImageSliderCustom"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+
+    <section class="image-slider js-image-slider-container js-popup-section">
+        <div class="wrap">
+            <div class="image-slider__wrap js-popup-content">
+                <div class="image-slider__container js-image-slider js-slider-popup" data-sly-list.item="${imageslidercustom.imageSliderWithMap}">
+                    <div class="image-slider__slide js-sc-slide">
+                        <div class="image-slider__img-holder">
+                            <img class="image-slider__img js-open-popup" src='${item.navigationRoot}' alt="Image text">
+                            <button class="image-slider__popup-btn image-slider__popup-btn--open btn-popup js-open-popup" type="button">
+                                <span class="sr-only">Open galery</span>
+                                <span class="icon font-ico-plus" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <p class="image-slider__caption">${item.text}</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-controls__counter">
+                        <span class="slider-controls__current js-sc-current">1</span>
+                        <span class="slider-controls__total js-sc-total"></span>
+                    </div>
+                    <div class="slider-controls__slider-controls">
+                        <button class="slider-controls__btn slider-controls__btn--prev js-sc-prev" type="button">
+                            <span class="sr-only">Previus slide</span>
+                        </button>
+                        <button class="slider-controls__btn slider-controls__btn--next js-sc-next" type="button">
+                            <span class="sr-only">Next slide</span>
+                        </button>
+                        <div class="slider-controls__progress" aria-hidden="true">
+                            <span class="slider-controls__line js-sc-line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-slider__popup-overlay js-img-overlay">
+                <div class="image-slider__popup js-popup">
+                    <button class="image-slider__popup-btn image-slider__popup-btn--close btn-popup js-close-popup" type="button">
+                        <span class="sr-only">Close galery</span>
+                        <span class="icon font-ico-close" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
+
+
