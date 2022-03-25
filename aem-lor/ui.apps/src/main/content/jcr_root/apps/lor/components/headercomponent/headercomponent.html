@@ -1,0 +1,341 @@
+
+    <header class="header js-header js-header-loaded header--loaded">
+        <div class="header__container">
+            <button class="header__hamburger js-nav-btn" type="button">
+                <span class="header__hamburger-line"></span>
+                <span class="sr-only">Toggle navigation menu</span>
+            </button>
+            <a href="/" class="header__home">
+                <div class="header__home-wrap">
+                    <img src="assets/images/logo.svg" alt="Laing O'Rourke logo" class="header__logo header__logo--desktop">
+                    <img src="assets/images/logo-mobile.svg" alt="Laing O'Rourke logo mobile" class="header__logo header__logo--mobile">
+                </div>
+            </a>
+            <div class="search-data js-search">
+                <button class="search-data__button js-search-btn" type="button" aria-label="Search">
+                    <span class="icon font-ico-search"></span>
+                    <span class="sr-only">Toggle search input</span>
+                </button>
+                <div class="search-data__container">
+                    <div class="search-data__wrap">
+                        <div class="search-data__top">
+                            <form class="search-data__form" action="">
+                                <button class="search-data__btn-icon js-submit-form" type="submit">
+                                    <span class="icon font-ico-search"></span>
+                                    <span class="sr-only">Submit the form</span>
+                                </button>
+                                <label class="sr-only" for="search">Search Laing O'Rourke</label>
+                                <input class="search-data__input text js-search-input" type="text" name="search" id="search" placeholder="Text text">
+                                <button class="search-data__btn js-submit-form" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="search-data__overflow js-search-content" style="display: none;">
+                            <div class="search-data__middle">
+                                <div class="wrap">
+                                    <div class="search-data__item">
+                                        <span class="search-data__name text">Sector</span>
+                                        <div class="search-data__content">
+                                            <p class="search-data__text text">Test <span class="search-data__search-text js-search-text"></span>are</p>
+                                        </div>
+                                    </div>
+                                    <div class="search-data__item">
+                                        <span class="search-data__name text">Projects</span>
+                                        <div class="search-data__content">
+                                            <div class="search-data__desc-wrap">
+                                                <span class="search-data__desc search-data__desc--category">Cateogry</span>
+                                            </div>
+                                            <p class="search-data__text text">Project title Lorem <span class="search-data__search-text js-search-text"></span>are test</p>
+                                            <a href="javascript:;" class="btn">
+                                                <span class="icon font-ico-arrow"></span>
+                                                <span class="btn__outline">Read More</span>
+                                            </a>
+                                            <div class="search-data__desc-wrap">
+                                                <span class="search-data__desc search-data__desc--category">Cateogry 2</span>
+                                            </div>
+                                            <p class="search-data__text text">Project title 222 <span class="search-data__search-text js-search-text"></span>are test</p>
+                                            <a href="javascript:;" class="btn">
+                                                <span class="icon font-ico-arrow"></span>
+                                                <span class="btn__outline">Read More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-data__item">
+                                        <span class="search-data__name text">Thinking</span>
+                                        <div class="search-data__content">
+                                            <div class="search-data__desc-wrap">
+                                                <span class="search-data__desc">08.11.20</span>
+                                                <span class="search-data__desc">by Jack Daniel Lloyd Davies</span>
+                                            </div>
+                                            <p class="search-data__text text">Thinking title Lorem <span class="search-data__search-text js-search-text"></span>are test</p>
+                                            <a href="javascript:;" class="btn">
+                                                <span class="icon font-ico-arrow"></span>
+                                                <span class="btn__outline">Read More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-data__item">
+                                        <span class="search-data__name text text">Press release</span>
+                                        <div class="search-data__content">
+                                            <p class="search-data__text text">Press release title <span class="search-data__search-text js-search-text"></span>are test</p>
+                                            <div class="search-data__links">
+                                                <a href="javascript:;" class="link"> View online <span class="icon font-ico-chevron-right"></span>
+                                                </a>
+                                                <a href="javascript:;" class="link link--download" target="_blank" data-size="98kb"> Download PDF <span class="icon font-ico-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-data__item">
+                                        <span class="search-data__name text">Our people</span>
+                                        <div class="search-data__content">
+                                            <div class="search-data__people">
+                                                <span class="search-data__text text">People <span class="search-data__search-text js-search-text"></span> test</span>
+                                                <span class="search-data__text text">Head of Development</span>
+                                                <span class="search-data__text text">Australia</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-data__bottom">
+                                <a href="javascript:;" class="link"> View all results for "<span class="search-data__search-text js-search-text"></span>" <span class="icon font-ico-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="nav__back-btn js-back-btn">
+                <span class="icon font-ico-arrow-left-thin"></span>
+                <span class="sr-only">Back to main menu</span>
+            </button>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list" role="menubar">
+                <li class="nav__item" role="menuitem">
+                    <a href="javascript:;" class="nav__link nav__secondary-link--has-children js-main-link">Thinking</a>
+                    <div class="nav__secondary">
+                        <div class="nav__heading">
+                            <h3 class="nav__title">Thinking</h3>
+                            <a href="javascript:;" class="btn btn--white">
+                                <span class="icon font-ico-arrow"></span>
+                                <span class="btn__outline">Visit this section</span>
+                            </a>
+                        </div>
+                        <div class="nav__secondary-wrap">
+                            <ul class="nav__secondary-list" role="menubar">
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Item 1</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Item 2</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Item 3</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Item 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item" role="menuitem">
+                    <a href="javascript:;" class="nav__link nav__secondary-link--has-children js-main-link">Projects</a>
+                    <div class="nav__secondary">
+                        <div class="nav__heading">
+                            <h3 class="nav__title">Projects</h3>
+                            <a href="javascript:;" class="btn btn--white">
+                                <span class="icon font-ico-arrow"></span>
+                                <span class="btn__outline">Visit this section</span>
+                            </a>
+                        </div>
+                        <div class="nav__secondary-wrap">
+                            <ul class="nav__secondary-list" role="menubar">
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Our story 1</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link nav__secondary-link--has-children js-nav-secondary">Expertise 1</a>
+                                    <div class="nav__tertiary">
+                                        <div class="nav__heading">
+                                            <h4 class="nav__title">Expertise 1</h4>
+                                            <a href="javascript:;" class="btn btn--white">
+                                                <span class="icon font-ico-arrow"></span>
+                                                <span class="btn__outline">Visit this section</span>
+                                            </a>
+                                        </div>
+                                        <div class="nav__tertiary-wrap">
+                                            <ul class="nav__tertiary-list" role="menubar">
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">Item one 1</a>
+                                                </li>
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">item two 1</a>
+                                                </li>
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">Item three 1</a>
+                                                </li>
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">Item four 1</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link nav__secondary-link--has-children js-nav-secondary">Test test </a>
+                                    <div class="nav__tertiary">
+                                        <div class="nav__heading">
+                                            <h4 class="nav__title">Test test </h4>
+                                            <a href="javascript:;" class="btn btn--white">
+                                                <span class="icon font-ico-arrow"></span>
+                                                <span class="btn__outline">Visit this section</span>
+                                            </a>
+                                        </div>
+                                        <div class="nav__tertiary-wrap">
+                                            <ul class="nav__tertiary-list" role="menubar">
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">Item one test</a>
+                                                </li>
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">item two test</a>
+                                                </li>
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">Item three test</a>
+                                                </li>
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">Item four test</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Our businesses 1</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Sustainability 1</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Industry postions 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item" role="menuitem">
+                    <a href="javascript:;" class="nav__link nav__secondary-link--has-children js-main-link">Company</a>
+                    <div class="nav__secondary">
+                        <div class="nav__heading">
+                            <h3 class="nav__title">Company</h3>
+                            <a href="javascript:;" class="btn btn--white">
+                                <span class="icon font-ico-arrow"></span>
+                                <span class="btn__outline">Visit this section</span>
+                            </a>
+                        </div>
+                        <div class="nav__secondary-wrap">
+                            <ul class="nav__secondary-list" role="menubar">
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Our story</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Expertise</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">How we deliver</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link nav__secondary-link--has-children js-nav-secondary">Our businesses</a>
+                                    <div class="nav__tertiary">
+                                        <div class="nav__heading">
+                                            <h4 class="nav__title">Our businesses</h4>
+                                            <a href="javascript:;" class="btn btn--white">
+                                                <span class="icon font-ico-arrow"></span>
+                                                <span class="btn__outline">Visit this section</span>
+                                            </a>
+                                        </div>
+                                        <div class="nav__tertiary-wrap">
+                                            <ul class="nav__tertiary-list" role="menubar">
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">Item one</a>
+                                                </li>
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">item two</a>
+                                                </li>
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">Item three</a>
+                                                </li>
+                                                <li class="nav__tertiary-item">
+                                                    <a href="javascript:;" class="nav__tertiary-link">Item four</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Sustainability</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Industry postions</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Leadrship</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Polices and documents</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Partnerships</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Community</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Test test 1</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Test test 2</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Test test 3</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Test test 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item" role="menuitem">
+                    <a href="javascript:;" class="nav__link nav__secondary-link--has-children js-main-link">Careers</a>
+                    <div class="nav__secondary">
+                        <div class="nav__heading">
+                            <h3 class="nav__title">Careers</h3>
+                            <a href="javascript:;" class="btn btn--white">
+                                <span class="icon font-ico-arrow"></span>
+                                <span class="btn__outline">Visit this section</span>
+                            </a>
+                        </div>
+                        <div class="nav__secondary-wrap">
+                            <ul class="nav__secondary-list" role="menubar">
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Item 1</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Item 2</a>
+                                </li>
+                                <li class="nav__secondary-item" role="menuitem">
+                                    <a href="javascript:;" class="nav__secondary-link">Item 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item" role="menuitem">
+                    <a href="javascript:;" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
