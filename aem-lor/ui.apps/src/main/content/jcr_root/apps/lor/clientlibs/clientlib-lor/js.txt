@@ -1,3 +1,4 @@
 #base=js
 
 lor-scripts.js
+slider-scripts.js

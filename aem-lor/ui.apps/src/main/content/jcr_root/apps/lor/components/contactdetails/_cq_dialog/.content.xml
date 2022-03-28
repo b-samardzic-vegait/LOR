@@ -63,7 +63,7 @@
                                                 emptyText="Enter the phone to display."
                                                 fieldDescription="The phone to display."
                                                 fieldLabel="Phone"
-                                                name="./description"
+                                                name="./phone"
                                                 required="{Boolean}true"/>
                                         </items>
                                     </column>
