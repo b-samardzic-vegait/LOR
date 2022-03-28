@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-17T11:03:04.204+01:00"
+        cq:lastModified="{Date}2022-03-28T13:13:50.427+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/lor/settings/wcm/templates/homepage1"
         jcr:primaryType="cq:PageContent"
@@ -13,30 +13,206 @@
             sling:resourceType="lor/components/container"
             layout="responsiveGrid">
             <container
+                jcr:lastModified="{Date}2022-03-28T12:50:46.054+02:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="lor/components/container">
-                <breadcrumb
-                    jcr:created="{Date}2022-03-17T10:49:36.354+01:00"
+                sling:resourceType="lor/components/container"
+                backgroundColor="#fffffe"
+                layout="responsiveGrid">
+                <image
+                    jcr:created="{Date}2022-03-28T12:30:03.560+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-17T10:50:36.099+01:00"
+                    jcr:lastModified="{Date}2022-03-28T12:32:55.173+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/breadcrumb"
-                    disableShadowing="false"
-                    hideCurrent="false"
-                    showHidden="false"
-                    startLevel="3"/>
+                    sling:resourceType="lor/components/image"
+                    altValueFromDAM="true"
+                    displayPopupTitle="true"
+                    fileReference="/content/dam/lor/banner-img.jpg"
+                    isDecorative="false"
+                    titleValueFromDAM="true"/>
+                <container
+                    cq:styleIds="[1648462602858]"
+                    jcr:created="{Date}2022-03-28T12:17:20.731+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T12:35:51.628+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container"
+                    backgroundColor="#ffffff"
+                    layout="responsiveGrid">
+                    <text
+                        jcr:created="{Date}2022-03-28T11:18:24.818+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-28T12:37:53.340+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/text"
+                        text="&lt;h1>Standard Content Page Lorem Ipsum Dolor&lt;/h1>&#xd;&#xa;&lt;h1>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Sit Amet Consectuer Libero&lt;/h1>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;10.11.20&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus posuere dictum rhoncus lobortis sit quis. Pellentesque habitant ullamcorper mi amet est tempor vitae. Erat cursus turpis at quam. Dolor feugiat commodo est nullam. Pellentesque facilisi odio tortor, tincidunt augue feugiat duis feugiat consectetur. Accumsan, potenti tempus, ut urna ornare quam. Facilisis velit, pretium mauris sagittis, scelerisque tincidunt turpis.&lt;br>&#xd;&#xa;&lt;/h2>&#xd;&#xa;&lt;h3>&amp;nbsp;&lt;/h3>&#xd;&#xa;&lt;p>&lt;b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus posuere dictum rhoncus lobortis sit quis. Pellentesque habitant ullamcorper mi amet est tempor vitae. Erat cursus turpis at quam. Dolor feugiat commodo est nullam. Pellentesque facilisi odio tortor, tincidunt augue feugiat duis feugiat consectetur. Accumsan, potenti tempus, ut urna ornare quam. Facilisis velit, pretium mauris sagittis, scelerisque tincidunt turpis.&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus posuere dictum rhoncus lobortis sit quis. Pellentesque habitant ullamcorper mi amet est tempor vitae. Erat cursus turpis at quam. Dolor feugiat commodo est nullam. Pellentesque facilisi odio tortor, tincidunt augue feugiat duis feugiat consectetur. Accumsan, potenti tempus, ut urna ornare quam. Facilisis velit, pretium mauris sagittis, scelerisque tincidunt turpis.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;h3>Facilisis eros dis gravida nostra integer&lt;/h3>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus posuere dictum rhoncus lobortis sit quis.&lt;/li>&#xd;&#xa;&lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;ul>&#xd;&#xa;&lt;li>Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce wisi. Sed pharetra metus convallis magna eu sem&lt;/li>&#xd;&#xa;&lt;li>Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce wisi. Sed pharetra metus convallis magna eu sem&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus posuere dictum rhoncus lobortis sit quis.&lt;/li>&#xd;&#xa;&lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus posuere dictum rhoncus lobortis sit quis.&lt;/li>&#xd;&#xa;&lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapibus posuere dictum rhoncus lobortis sit quis.&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;ol>&#xd;&#xa;&lt;li>Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce wisi. Sed pharetra metus convallis magna eu sem&lt;/li>&#xd;&#xa;&lt;li>Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce wisi. Sed pharetra metus convallis magna eu sem&lt;/li>&#xd;&#xa;&lt;li>Donec ipsum massa, ullamcorper in, auctor et.&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;"
+                        textIsRich="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="6"/>
+                        </cq:responsive>
+                    </text>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="8"/>
+                    </cq:responsive>
+                </container>
                 <contactdetails
                     jcr:created="{Date}2022-03-17T10:50:45.235+01:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-17T11:03:04.202+01:00"
+                    jcr:lastModified="{Date}2022-03-28T13:13:50.420+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="lor/components/contactdetails"
                     description="123456789"
-                    email="staceyroswells@gmail.com"
+                    email="roswells@gmail.com"
+                    fileReference="/content/dam/we-retail/en/products/apparel/shirts/Shirts_women.jpg"
                     name="Stacey Roswells"
+                    phone="58725629"
                     position="Photographer"/>
+                <accordioncustom
+                    jcr:created="{Date}2022-03-28T09:36:22.053+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T09:36:46.519+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/accordioncustom">
+                    <accordiondetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            section="Section 1"
+                            text="Section 1 text"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            section="Section 2"
+                            text="Section 2 text"/>
+                    </accordiondetailswithmap>
+                </accordioncustom>
+                <tablecustom
+                    jcr:created="{Date}2022-03-28T10:07:07.876+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T10:28:49.906+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/tablecustom"
+                    titlefour="Column 4"
+                    titleone="Column 1"
+                    titlethree="Column 3"
+                    titletwo="Column 2">
+                    <tabledetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            cellfour="Cell four"
+                            cellone="Cell One"
+                            cellthree="Cell three"
+                            celltwo="Cell two"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            cellfour="Cell Four"
+                            cellone="Cell One"
+                            cellthree="Cell Three"
+                            celltwo="Cell Two"/>
+                    </tabledetailswithmap>
+                </tablecustom>
+                <tabscustom
+                    jcr:created="{Date}2022-03-28T10:07:17.357+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T10:30:20.590+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/tabscustom">
+                    <tabdetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            tabname="Tab 1"
+                            text="Tab 1 text"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            tabname="Tab 2"
+                            text="Tab 2 text"/>
+                    </tabdetailswithmap>
+                </tabscustom>
+                <imageslidercustom
+                    jcr:created="{Date}2022-03-28T09:40:19.342+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T09:46:07.030+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/imageslidercustom">
+                    <imagesliderdetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/we-retail/en/activities/biking/cycling_1.jpg"
+                            text="image 1"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/we-retail/en/activities/biking/enduro-trail-jump.jpg"
+                            text="image 2"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/we-retail/en/activities/biking/forest-trail.jpg"
+                            text="image 3"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/we-retail/en/activities/biking/group-mountain-bikers.jpg"
+                            text="image 4"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/we-retail/en/activities/biking/mountain-biking.jpg"
+                            text="image 5"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/we-retail/en/activities/biking/rocks-downhill.jpg"
+                            text="image 6"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/we-retail/en/activities/climbing/climber-gear-outdoor.jpg"
+                            text="image 7"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/we-retail/en/activities/climbing/climber-gear-rope.jpg"
+                            text="image 8"/>
+                    </imagesliderdetailswithmap>
+                </imageslidercustom>
+                <videocustom
+                    jcr:created="{Date}2022-03-28T11:25:58.300+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T11:27:37.200+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/videocustom"
+                    description="Description"
+                    navigationRoot="/content/dam/lor/Animation-4Doverall.mp4"
+                    title="Video"/>
+                <timelinecustom
+                    jcr:created="{Date}2022-03-28T11:28:57.145+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T11:30:03.564+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/timelinecustom"
+                    description="This new build covers 55,314m2. It includes 560 beds, and provides complex specialist and critical care treatment for over 600,000 people in south-east Wales. It offers an 24-hours acute assessment unit and emergency department, and incorporates 11 operating theatres, one Cat 3 Laboratory, two MRI Suites, two CT suites and an education block.  We digitally engineered 4,000 concrete components and manufactured them 200 miles away from the site at Explore Industrial Park in Derbyshire. These products included 7,000m2 of sandwich panels, and 612 columns – which we delivered to the site for construction. From planning to build, this is our unique, joined up approach in action."
+                    title="Serving hundreds of thousands of patients - timeline">
+                    <timelinedetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            somebutton="Button text"
+                            sometext="Contracts signed. Laing O'Rourke begins the DfMaA process in close collaboration with Aneuran Bevan University Health Board."
+                            sometitle="DATE LABEL HERE"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            somebutton="Button text"
+                            sometext="Contracts signed. Laing O'Rourke begins the DfMaA process in close collaboration with Aneuran Bevan University Health Board."
+                            sometitle="DATE LABEL HERE"/>
+                    </timelinedetailswithmap>
+                </timelinecustom>
             </container>
         </root>
     </jcr:content>

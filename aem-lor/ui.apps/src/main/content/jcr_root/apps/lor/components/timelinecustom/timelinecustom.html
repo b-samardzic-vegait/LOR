@@ -2,7 +2,7 @@
     data-sly-use.timelinecustom="com.adobe.aem.guides.wknd.core.models.TimelineCustom"
     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
     data-sly-test.hasContent="${!timelinecustom.empty}" >
-    <section class="timeline animation js-animation animation--started">
+    <section class="timeline animation js-animation">
         <div class="wrap">
             <div class="timeline__wrap">
                 <div class="timeline__main sticky">
@@ -15,10 +15,12 @@
                 </div>
                 <div class="timeline__list">
                     <div class="timeline__item animation__fade-up" data-sly-list.item="${timelinecustom.timelineWithMap}">
-                        <span class="icon font-ico-circle" aria-hidden="true"></span>
+                        <!--<span class="icon font-ico-circle" aria-hidden="true"></span>-->
+						<span class="icon" aria-hidden="true"><img src="/content/dam/lor/ico-circle.svg" style="width:25px;height:25px;"></span>
                         <h3 class="timeline__label"><strong>${item.sometitle}</strong></h3>
                         <p class="timeline__text">${item.sometext}</p>
-                        <a href="javascript:;" class="link">${item.somebutton}<span class="icon font-ico-chevron-right"></span>
+                        <a href="javascript:;" class="link">${item.somebutton}<!--<span class="icon font-ico-chevron-right"></span>-->
+						<span class="icon" aria-hidden="true"><img src="/content/dam/lor/resources/ico-chevron-right.svg" style="width:12px;height:12px;padding-bottom:5px;"></span>
                         </a>
                     </div>
                 </div>

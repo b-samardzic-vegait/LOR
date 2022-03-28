@@ -440,12 +440,12 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_16975837857700>
                 <policy_1646394451778
-                    jcr:lastModified="{Date}2022-03-17T10:10:46.299+01:00"
+                    jcr:lastModified="{Date}2022-03-28T12:50:31.066+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Media Teaser Policy"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    allowedColorSwatches="[#1e1e1e,]"
+                    allowedColorSwatches="[#1e1e1e,ffffff,#fffffe]"
                     backgroundColorEnabled="true"
                     backgroundColorSwatchesOnly="true"
                     backgroundImageEnabled="true"
@@ -496,11 +496,13 @@
                 </policy_2604653853561900>
                 <policy_4253032245078900
                     cq:styleDefaultElement="div"
-                    jcr:lastModified="{Date}2022-03-24T15:12:30.432+01:00"
+                    jcr:lastModified="{Date}2022-03-28T12:48:26.138+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Expertise Policy"
                     sling:resourceType="wcm/core/components/policy/policy"
+                    allowedColorSwatches="#ffffff"
+                    backgroundColorEnabled="true"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
@@ -541,6 +543,12 @@
                                     cq:styleElement="div"
                                     cq:styleId="1648122588303"
                                     cq:styleLabel="Wrap"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item6
+                                    cq:styleClasses="custom-white-container"
+                                    cq:styleElement="div"
+                                    cq:styleId="1648462602858"
+                                    cq:styleLabel="White Container"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
