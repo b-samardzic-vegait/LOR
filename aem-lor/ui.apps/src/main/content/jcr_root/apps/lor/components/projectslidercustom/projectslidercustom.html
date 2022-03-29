@@ -1,11 +1,11 @@
 <div 
     data-sly-use.projectslidercustom="com.adobe.aem.guides.wknd.core.models.ProjectSliderCustom">
 
-    <section class="projects js-slider" data-section="true">
+    <section class="projects hero js-slider" data-section="true">
         <div class="projects__bottom">
-            <div class="projects__slider">
+            <div class="projects__slider"  data-sly-list.item="${projectslidercustom.projectSliderWithMap}">
                 <div class="projects__slide animation animation--block js-slide">
-                    <div class="projects__row" data-sly-list.item="${projectslidercustom.projectSliderWithMap}">
+                    <div class="projects__row">
                         <div class="projects__card js-full-width">
                             <div class="card ">
                                 <div class="card__content">
@@ -18,7 +18,7 @@
                                         <p class="card__text">${item.text}</p>
                                         <div class="card__btn">
                                             <a href="javascript:;" class="btn">
-                                                <span class="icon font-ico-arrow"><span class="sr-only">Arrow right</span></span>
+                                                <span class="icon color-black"><img class="font-ico-arrow" src="/content/dam/lor/resources/ico-arrow.svg" style="width:13px;height:13px;margin:13px;"></span>
                                                 <span class="btn__outline">Visit project</span>
                                             </a>
                                         </div>
@@ -48,11 +48,11 @@
                     <span class="controls__total js-slider-total"></span>
                 </div>
                 <button class="controls__btn controls__btn--play js-slider-btn" type="button" aria-label="Pause">
-                    <span class="icon font-ico-pause" aria-hidden="true"></span>
+                    <img class="font-ico-pause pause-img" src="/content/dam/lor/resources/ico-pause.svg" style="width:20px;height:20px;margin:5px;">
                     <span class="sr-only">Pause slide</span>
                 </button>
                 <button class="controls__btn controls__btn--skip js-slider-next" type="button" aria-label="Next">
-                    <span class="icon font-ico-skip" aria-hidden="true"></span>
+                    <img class="font-ico-skip skip-img" src="/content/dam/lor/resources/ico-skip.svg" style="width:20px;height:20px;margin:5px;">
                     <span class="sr-only">Next slide</span>
                 </button>
             </div>
