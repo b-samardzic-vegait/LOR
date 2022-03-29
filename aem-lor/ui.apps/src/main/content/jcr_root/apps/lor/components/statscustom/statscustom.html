@@ -1,0 +1,21 @@
+<div
+    data-sly-use.statscustom="com.adobe.aem.guides.wknd.core.models.StatsCustom"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!statscustom.empty}" >
+    
+    <section class="stats js-stats">
+        <div class="wrap wrap--small">
+            <div class="stats__wrap" data-sly-list.item="${statscustom.statsWithMap}">
+                <div class="stats__col js-stats-col">
+                    <img src='${item.navigationRoot}' alt="Icon" class="stats__image">
+                    <div class="stats__holder animation js-animation">
+                        <span class="stats__number animation__text-rises">${item.number}</span>
+                    </div>
+                    <p class="stats__text">${item.text}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
