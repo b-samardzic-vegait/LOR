@@ -619,7 +619,7 @@
                     </cq:styleGroups>
                 </policy_1646920415631>
                 <policy_3217735776189300
-                    jcr:lastModified="{Date}2022-03-24T10:07:28.715+01:00"
+                    jcr:lastModified="{Date}2022-03-29T16:34:30.033+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Ticket Style 1"
@@ -634,7 +634,7 @@
                                 <item0
                                     cq:styleClasses="custom-style--no_background"
                                     cq:styleId="1646985698726"
-                                    cq:styleLabel="No background"
+                                    cq:styleLabel="White text"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
