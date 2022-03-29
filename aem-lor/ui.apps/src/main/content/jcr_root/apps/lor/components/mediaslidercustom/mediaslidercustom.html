@@ -1,0 +1,67 @@
+<div 
+    data-sly-use.mediaslidercustom="com.adobe.aem.guides.wknd.core.models.MediaSliderCustom">
+
+    <section class="slider js-popup-section">
+        <div class="wrap wrap--small">
+            <div class="slider__wrap js-popup-content">
+                <div class="slider__container js-slider-desktop js-slider-popup" data-sly-list.item="${mediaslidercustom.mediaSliderWithMap}">
+                    <div class="slider__slide js-sc-slide">
+                        <div class="slider__media-wrap">
+                            <sly data-sly-test.image="${item.layout == 'image'}"
+                                data-sly-use.imageTemplate="image.html"
+                                data-sly-call="${imageTemplate.image @ item=item}">
+                            </sly>
+                            <sly data-sly-test.video="${item.layout == 'video'}"
+                                data-sly-use.videoTemplate="video.html"
+                                data-sly-call="${videoTemplate.video @ item=item}">
+                            </sly>
+                            <sly data-sly-test.videoplayer="${item.layout == 'videoplayer'}"
+                                data-sly-use.videoplayerTemplate="videoplayer.html"
+                                data-sly-call="${videoplayerTemplate.videoplayer @ item=item}">
+                            </sly>
+                            <sly data-sly-test.youtubevideo="${item.layout == 'youtubevideo'}"
+                                data-sly-use.youtubevideoTemplate="youtubevideo.html"
+                                data-sly-call="${youtubevideoTemplate.youtubevideo @ item=item}">
+                            </sly>
+                            <button class="slider__popup-btn slider__popup-btn--open btn-popup js-open-popup" type="button">
+                                <span class="sr-only">Open galery</span>
+                                <span class="icon font-ico-plus" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="slider__bottom">
+                            <div class="slider__content">
+                                <span class="slider__location">${item.location}</span>
+                                <p class="slider__caption">${item.caption}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-controls__counter">
+                        <strong class="slider-controls__current js-sc-current">1</strong>
+                        <strong class="slider-controls__total js-sc-total"></strong>
+                    </div>
+                    <div class="slider-controls__slider-controls">
+                        <button class="slider-controls__btn slider-controls__btn--prev js-sc-prev" type="button">
+                            <span class="sr-only">Previous slide</span>
+                        </button>
+                        <button class="slider-controls__btn slider-controls__btn--next js-sc-next" type="button">
+                            <span class="sr-only">Next slide</span>
+                        </button>
+                        <div class="slider-controls__progress" aria-hidden="true">
+                            <span class="slider-controls__line js-sc-line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div >
+                    <button type="button">
+                        <span class="sr-only">Close galery</span>
+                        <span class="icon font-ico-close" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

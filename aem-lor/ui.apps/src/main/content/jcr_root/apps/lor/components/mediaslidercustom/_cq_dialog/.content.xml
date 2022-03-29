@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Media Slider Custom"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}false">
+                <items jcr:primaryType="nt:unstructured">
+                    <multifieldwithmap
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multifieldwithmap"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <mediasliderdetailswithmap
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Media Slider Details"
+                                        fieldLabel="Media Slider Details"
+                                        required="{Boolean}false">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            emptyText="Media Slider Details"
+                                            name="./mediasliderdetailswithmap">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <location
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Location"
+                                                    name="./location"/>
+                                                <caption
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Caption"
+                                                    name="./caption"/>
+                                                <layout
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Layout"
+                                                    name="./layout">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <image
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Image"
+                                                            value="image"/>
+                                                        <video
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Video"
+                                                            value="video"/>
+                                                        <videoplayer
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Video player"
+                                                            value="videoplayer"/>
+                                                        <youtubevideo
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Youtube video"
+                                                            value="youtubevideo"/>
+                                                        <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="(Default)"
+                                                            value=""/>
+                                                    </items>
+                                                    <granite:rendercondition
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/renderconditions/image"
+                                                        expression="${!cqDesign.layoutDisabled}"/>
+                                                </layout>   
+                                                <navigationRoot
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="The root page from which to build the navigation. Can be a blueprint master, language master or regular page."
+                                                    fieldLabel="Navigation Root"
+                                                    name="./navigationRoot"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content"
+                                                    value="${not empty cqDesign.navigationRoot ? cqDesign.navigationRoot : ''}"/>                                               
+                                            </items>
+                                        </field>
+                                    </mediasliderdetailswithmap>
+                                </items>
+                            </well>
+                        </items>
+                    </multifieldwithmap>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
