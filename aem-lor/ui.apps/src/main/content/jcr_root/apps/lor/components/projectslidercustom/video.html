@@ -1,0 +1,8 @@
+<template data-sly-template.video="${ @ item}">
+    <div class="projects__media">
+        <div class="projects__image has-cover animation__image"></div>
+        <div data-auto="true">
+            <video muted="" autoplay="" loop="" playsinline="" class="video video--video" controls src='${item.navigationRoot}' type="video/mp4"></video>
+        </div>
+    </div>
+</template>
