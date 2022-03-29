@@ -1,0 +1,14 @@
+<template data-sly-template.video="${ @ item}">
+    <div class="projects__video">
+        <div data-auto="true">
+            <video muted="" autoplay="" loop="" playsinline="" controls src='${item.navigationRoot}' type="video/mp4"></video>
+        </div>
+        <button class="slider__video-btn video-btn js-play-video" type="button">
+            <span class="icon font-ico-play"></span>
+            <span class="sr-only">Play/pause video</span>
+        </button>
+        <svg class="slider__circle-holder" height="100" width="100">
+            <circle class="slider__circle" cx="50" cy="50" r="46" stroke="#fff" stroke-width="2" fill-opacity="0"></circle>
+        </svg>
+    </div>
+</template>
