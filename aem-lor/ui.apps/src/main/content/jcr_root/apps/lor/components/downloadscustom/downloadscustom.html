@@ -2,24 +2,26 @@
     data-sly-use.downloadscustom="com.adobe.aem.guides.wknd.core.models.DownloadsCustom"
     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
     data-sly-test.hasContent="${!downloadscustom.empty}" >
+
     <section class="downloads">
-	<div class="wrap wrap--small">
-		<h3 class="downloads__title h5">Downloads</h3>
-		<div class="downloads__container">
-			<div class="downloads__left">
-				<span class="downloads__date">${downloadscustom.date}</span>
-				<div class="downloads__content">
-					<h3 class="downloads__heading h6">${downloadscustom.header}</h3>
-					<p class="downloads__text">${downloadscustom.description}</p>
-				</div>
-			</div>
-			<div class="downloads__right"  data-sly-list.item="${downloadscustom.downloadsWithMap}">
-				<a href="javascript:;" class="link link--download" target="_blank" data-size="112kb">${item.assettodownload}<span class="icon font-ico-chevron-right"></span>
-				</a>
-			</div>
-		</div>
-	</div>
-</section>
+        <div class="wrap wrap--small">
+            <h3 class="downloads__title h5">Downloads</h3>
+            <div class="downloads__container">
+                <div class="downloads__left">
+                    <span class="downloads__date" style="color:red">${downloadscustom.date}</span>
+                    <div class="downloads__content">
+                        <h3 class="downloads__heading h6">${downloadscustom.header}</h3>
+                        <p class="downloads__text">${downloadscustom.description}</p>
+                    </div>
+                </div>
+                <div class="downloads__right"  data-sly-list.item="${downloadscustom.downloadsWithMap}">
+                    <a href="${item.navigationRoot}" class="link link--download" target="_blank" data-size="112kb">${item.assettodownload}<span class="icon font-ico-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>

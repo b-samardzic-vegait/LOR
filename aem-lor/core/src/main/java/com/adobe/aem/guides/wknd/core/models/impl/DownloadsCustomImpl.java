@@ -47,14 +47,15 @@ public class DownloadsCustomImpl implements DownloadsCustom {
             Resource downloadDetail = componentResource.getChild("downloadscustomdetailswithmap");
 
             if (downloadDetail != null) {
-                for (Resource timeline : downloadDetail.getChildren()) {
+                for (Resource download : downloadDetail.getChildren()) {
                     Map<String, String> downloadMap = new HashMap<>();
-                    downloadMap.put("assettodownload", timeline.getValueMap().get("assettodownload", String.class));
+                    downloadMap.put("assettodownload", download.getValueMap().get("assettodownload", String.class));
+                    downloadMap.put("navigationRoot", download.getValueMap().get("navigationRoot", String.class));
                     downloadDetails.add(downloadMap);
                 }
             }
         } catch (Exception e) {
-            LOG.info("\n ERROR while getting Timeline List Details {} ", e.getMessage());
+            LOG.info("\n ERROR while getting Downloads List Details {} ", e.getMessage());
         }
 
         LOG.info("\n SIZE {} ", downloadDetails.size());
