@@ -1,0 +1,27 @@
+<div 
+    data-sly-use.extralinkspanelcustom="com.adobe.aem.guides.wknd.core.models.ExtraLinksPanelCustom">
+
+    <section class="external-links">
+        <div class="wrap wrap--small">
+            <div class="external-links__wrap">
+                <h2 class="external-links__title">${extralinkspanelcustom.title}</h2>
+                <div class="external-links__list">
+                    <ul class="external-links__list-wrap" role="menubar" data-sly-list.item="${extralinkspanelcustom.extraLinksPanelCustomWithMap}">
+                        <sly data-sly-test.external="${item.layout == 'external'}"
+                            data-sly-use.externalTemplate="external.html"
+                            data-sly-call="${externalTemplate.external @ item=item}">
+                        </sly>
+                        <sly data-sly-test.pdf="${item.layout == 'pdf'}"
+                            data-sly-use.pdfTemplate="pdf.html"
+                            data-sly-call="${pdfTemplate.pdf @ item=item}">
+                        </sly>
+                        <sly data-sly-test.chain="${item.layout == 'chain'}"
+                            data-sly-use.chainTemplate="chain.html"
+                            data-sly-call="${chainTemplate.chain @ item=item}">
+                        </sly>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
