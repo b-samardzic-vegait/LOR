@@ -39,8 +39,7 @@
                                                 emptyText="Enter the ticket header to display."
                                                 fieldDescription="The ticket header to display."
                                                 fieldLabel="Ticket Header"
-                                                name="./ticketHeader"
-                                                required="{Boolean}true"/>
+                                                name="./ticketHeader"/>
                                             <title
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -75,6 +74,10 @@
                                                         jcr:primaryType="nt:unstructured"
                                                         text="(Default)"
                                                         value=""/>
+                                                    <imageblock
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Image block"
+                                                        value="imageblock"/>
                                                 </items>
                                                 <granite:rendercondition
                                                     jcr:primaryType="nt:unstructured"

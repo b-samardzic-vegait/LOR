@@ -4,7 +4,11 @@
             data-sly-use.stickyTemplate="sticky.html"
             data-sly-call="${stickyTemplate.sticky @ ticket=ticket}"
 		></sly>
-        <sly data-sly-test.simple="${!sticky}"
+		<sly data-sly-test.imageblock="${properties.layout == 'imageblock'}"
+            data-sly-use.imageblockTemplate="imageblock.html"
+            data-sly-call="${imageblockTemplate.imageblock @ ticket=ticket}"
+		></sly>
+        <sly data-sly-test.simple="${!sticky && !imageblock}"
             data-sly-use.simpleTemplate="simple.html"
             data-sly-call="${simpleTemplate.simple @ ticket=ticket}"
 		></sly>

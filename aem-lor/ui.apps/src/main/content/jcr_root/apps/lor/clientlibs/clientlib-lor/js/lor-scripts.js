@@ -9,8 +9,47 @@ $(document).ready(() => {
     animations.init();
     expertise.init();
     latestNews.init();
+	imageBlock.init();
 });
 
+const imageBlock = {
+	$html: $('html'),
+	$imageBlockList: $('.js-image-block-list'),
+	$imageBlockItem: $('.js-image-block-item'),
+	imageOneClass: 'image-block--one',
+	imageFullClass: 'image-block--full',
+	imageHoverClass: 'image-block__item--hover',
+
+	init: function() {
+		this.checkImageBlockList();
+		this.hoverImageLink();
+	},
+
+	checkImageBlockList: function() {
+		if (!this.$imageBlockList.length) return;
+		const _this = this;
+		this.$imageBlockList.each(function() {
+			const listLength = $(this).find('.js-image-block-item').length;
+			if (listLength % 2 !== 0) {
+				$(this).addClass(_this.imageFullClass);
+			}
+		});
+	},
+
+	hoverImageLink: function() {
+		if (!this.$imageBlockList.length || this.$html.hasClass('touch')) return;
+		const _this = this;
+		const $btn = this.$imageBlockItem.find('.btn');
+		$btn.on({
+			mouseenter: function() {
+				$(this).closest('.js-image-block-item').addClass(_this.imageHoverClass);
+			},
+			mouseleave: () => {
+				this.$imageBlockItem.removeClass(this.imageHoverClass);
+			}
+		});
+	}
+};
 
 
 

@@ -2,7 +2,13 @@
          <sly data-sly-test.pressrelease="${properties.layout == 'pressrelease'}"
              data-sly-use.pressreleaseTemplate="pressrelease.html"
              data-sly-call="${pressreleaseTemplate.pressrelease @ ticket=ticket}"></sly>
-         <sly data-sly-test.simple="${!pressrelease}"
+		 <sly data-sly-test.related="${properties.layout == 'related'}"
+             data-sly-use.relatedTemplate="related.html"
+             data-sly-call="${relatedTemplate.related @ ticket=ticket}"></sly>
+		 <sly data-sly-test.relatedcountry="${properties.layout == 'relatedcountry'}"
+             data-sly-use.relatedcountryTemplate="relatedcountry.html"
+             data-sly-call="${relatedcountryTemplate.related @ ticket=ticket}"></sly>
+         <sly data-sly-test.simple="${!pressrelease && !related && !relatedcountry}"
              data-sly-use.simpleTemplate="simple.html"
              data-sly-call="${simpleTemplate.simple @ ticket=ticket}"></sly>
     </sly>

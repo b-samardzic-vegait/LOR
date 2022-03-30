@@ -1,7 +1,6 @@
 <template data-sly-template.sticky="${ @ ticket}">
     <div class="expertise__sticky sticky__box js-sticky"
         data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-        data-sly-test.hasContent="${!ticket.empty}"
         >
         <span class="expertise__tag expertise__tag--main tag animation__fade-down color-black">${ticket.ticketHeader}</span>
         <div class="expertise__title-wrap">
@@ -15,7 +14,8 @@
             </a>
         </div>
     </div>
-    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
+
+
 
 </template>
 
