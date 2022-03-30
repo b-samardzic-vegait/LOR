@@ -3,5 +3,4 @@
     jcr:description="Displays a contributor's social media."
     jcr:primaryType="cq:Component"
     jcr:title="Social Media"
-    sling:resourceSuperType="core/wcm/components/image/v2/image"
     componentGroup="LOR - Content"/>
