@@ -1,0 +1,17 @@
+<template data-sly-template.imageblock="${ @ ticket}">
+	<div class="image-block__item animation js-animation js-image-block-item"
+		data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+		<div class="image-block__img has-cover animation__image animation__image--half" style="${ticket.backgroundImageSrc @ context='styleString'}"></div>
+		<div class="image-block__content">
+			<div class="image-block__title-wrap">
+				<h3 class="image-block__title h3 color-white animation__text-rises">${ticket.title}</h3>
+			</div>
+			<p class="image-block__text text color-white animation__text-rises">${ticket.description}</p>
+			<a href="javascript:;" class="btn animation__fade">
+				<span class="icon color-black"><img class="font-ico-arrow" src="/content/dam/lor/resources/ico-arrow.svg" style="width:13px;height:13px;margin:13px;"></span>
+				<span class="btn__outline">Default state</span>
+			</a>
+		</div>
+	</div>
+</template>
+

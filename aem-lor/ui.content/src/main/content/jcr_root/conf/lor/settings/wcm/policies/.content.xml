@@ -496,7 +496,7 @@
                 </policy_2604653853561900>
                 <policy_4253032245078900
                     cq:styleDefaultElement="div"
-                    jcr:lastModified="{Date}2022-03-29T11:55:00.588+02:00"
+                    jcr:lastModified="{Date}2022-03-30T14:03:04.789+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Expertise Policy"
@@ -549,6 +549,17 @@
                                     cq:styleElement="div"
                                     cq:styleId="1648462602858"
                                     cq:styleLabel="White Container"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item7
+                                    cq:styleClasses="image-block__list js-image-block-list"
+                                    cq:styleElement="div"
+                                    cq:styleId="1648640854664"
+                                    cq:styleLabel="Image Block"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item8
+                                    cq:styleClasses="related latest-news  js-bg-animation"
+                                    cq:styleId="1648640862836"
+                                    cq:styleLabel="Related Container"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
