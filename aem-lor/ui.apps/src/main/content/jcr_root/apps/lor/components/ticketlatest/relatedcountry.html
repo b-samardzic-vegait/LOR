@@ -1,0 +1,32 @@
+
+<template data-sly-template.related="${ @ ticket}">
+
+<div class="related__col animation js-animation js-sc-slide"
+		data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+								<div class="card ">
+									<div class="card__img-holder">
+										<div class="card__image has-cover" style="${ticket.backgroundImageSrc @ context='styleString'}"><span class="sr-only">Card image</span></div>
+										<div class="card__bg-tag hash">${ticket.ticketHeader}</div>
+									</div>
+									<div class="card__content">
+										<div class="card__top">
+											<div class="card__country">
+												<img src="${properties.flagImage}" alt="Flag" class="card__flag">
+												<span class="card__country-name">${ticket.tag}</span>
+											</div>
+										</div>
+										<div class="card__bottom">
+											<h2 class="card__title">${ticket.title}</h2>
+											<p class="card__text">${ticket.description}</p>
+											<div class="card__btn">
+												<a href="javascript:;" class="btn">
+													<span class="icon font-ico-arrow"><span class="sr-only">Arrow right</span></span>
+													<span class="btn__outline">Read More</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+</template>

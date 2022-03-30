@@ -39,16 +39,14 @@
                                                 emptyText="Enter the ticket header to display."
                                                 fieldDescription="The ticket header to display."
                                                 fieldLabel="Ticket Header"
-                                                name="./ticketHeader"
-                                                required="{Boolean}true"/>
+                                                name="./ticketHeader"/>
                                             <tag
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                 emptyText="Enter the title to display."
                                                 fieldDescription="The title to display."
                                                 fieldLabel="Tag"
-                                                name="./tag"
-                                                required="{Boolean}true"/>
+                                                name="./tag"/>
                                             <title
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -91,6 +89,14 @@
                                                         jcr:primaryType="nt:unstructured"
                                                         text="Press Release"
                                                         value="pressrelease"/>
+                                                    <related
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Related"
+                                                        value="related"/>
+                                                    <relatedcountry
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Related with Country"
+                                                        value="relatedcountry"/>
                                                 </items>
                                                 <granite:rendercondition
                                                     jcr:primaryType="nt:unstructured"
@@ -103,7 +109,14 @@
                                                 fieldDescription="The root page from which to build the navigation. Can be a blueprint master, language master or regular page."
                                                 fieldLabel="Navigation Root"
                                                 name="./downloadPdf"
-                                                required="{Boolean}true"
+                                                rootPath="/content"
+                                                value="${not empty cqDesign.navigationRoot ? cqDesign.navigationRoot : ''}"/>
+                                            <flagImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="The root page from which to build the navigation. Can be a blueprint master, language master or regular page."
+                                                fieldLabel="Navigation Root"
+                                                name="./flagImage"
                                                 rootPath="/content"
                                                 value="${not empty cqDesign.navigationRoot ? cqDesign.navigationRoot : ''}"/>
                                         </items>
