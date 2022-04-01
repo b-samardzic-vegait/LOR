@@ -1,5 +1,7 @@
-<sly data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.Ticket"
+<sly data-sly-use.ticket="com.adobe.aem.guides.wknd.core.models.Ticket" data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
 >
+<!--<sly data-sly-resource="${resource @ resourceType='wcm/foundation/components/responsivegrid'}" data-sly-test="${(wcmmode.edit)}"></sly>-->
+<sly >
         <sly data-sly-test.sticky="${properties.layout == 'sticky'}"
             data-sly-use.stickyTemplate="sticky.html"
             data-sly-call="${stickyTemplate.sticky @ ticket=ticket}"
@@ -13,3 +15,6 @@
             data-sly-call="${simpleTemplate.simple @ ticket=ticket}"
 		></sly>
 </sly>
+
+<!--<sly data-sly-test="${(wcmmode.edit)}" data-sly-call="${placeholderTemplate.placeholder}"></sly>
+</sly>-->

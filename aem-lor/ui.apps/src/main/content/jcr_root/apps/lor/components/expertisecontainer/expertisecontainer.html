@@ -3,7 +3,7 @@
         <sly data-sly-resource="${resource @ resourceType='wcm/foundation/components/responsivegrid'}" 
             data-sly-test="${(wcmmode.edit)}"
         ></sly>
-        <section class="expertise bg-grey-dark js-expertise">
+        <section data-sly-test="${(wcmmode.disabled)}" class="expertise bg-grey-dark js-expertise">
             <div class="expertise__bkg-image has-cover js-expertise-bkg-image" aria-hidden="true"></div>
             <div class="expertise__bkg-text" aria-hidden="true">
                 <div class="expertise__track">
