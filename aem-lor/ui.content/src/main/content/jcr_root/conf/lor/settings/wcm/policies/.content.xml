@@ -496,7 +496,7 @@
                 </policy_2604653853561900>
                 <policy_4253032245078900
                     cq:styleDefaultElement="div"
-                    jcr:lastModified="{Date}2022-03-30T14:03:04.789+02:00"
+                    jcr:lastModified="{Date}2022-03-31T14:34:26.277+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Expertise Policy"
@@ -630,7 +630,7 @@
                     </cq:styleGroups>
                 </policy_1646920415631>
                 <policy_3217735776189300
-                    jcr:lastModified="{Date}2022-03-29T16:34:30.033+02:00"
+                    jcr:lastModified="{Date}2022-04-01T10:11:21.607+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Ticket Style 1"
@@ -645,7 +645,7 @@
                                 <item0
                                     cq:styleClasses="custom-style--no_background"
                                     cq:styleId="1646985698726"
-                                    cq:styleLabel="White text"
+                                    cq:styleLabel="Black text"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>

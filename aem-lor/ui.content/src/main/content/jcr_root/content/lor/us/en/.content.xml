@@ -83,7 +83,17 @@
             </container>
         </root>
     </jcr:content>
-    <homepage/>
     <home-page-example/>
     <standard-content/>
+    <sitemap/>
+    <policies-and-documents/>
+    <error-page/>
+    <standard-landing/>
+    <article-page/>
+    <search-results/>
+    <leadership-page/>
+    <sector-landing/>
+    <priority-landing/>
+    <project-page/>
+    <directory/>
 </jcr:root>

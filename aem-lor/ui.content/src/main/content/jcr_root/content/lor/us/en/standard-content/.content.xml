@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-30T14:45:49.566+02:00"
+        cq:lastModified="{Date}2022-03-31T17:27:49.347+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/lor/settings/wcm/templates/homepage1"
         jcr:primaryType="cq:PageContent"
@@ -64,19 +64,83 @@
                             width="8"/>
                     </cq:responsive>
                 </container>
-                <contactdetails
-                    jcr:created="{Date}2022-03-17T10:50:45.235+01:00"
+                <mediaslidercustom
+                    jcr:created="{Date}2022-03-31T15:01:04.383+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-28T13:13:50.420+02:00"
+                    jcr:lastModified="{Date}2022-03-31T15:03:20.140+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/contactdetails"
-                    description="123456789"
-                    email="roswells@gmail.com"
-                    fileReference="/content/dam/we-retail/en/products/apparel/shirts/Shirts_women.jpg"
-                    name="Stacey Roswells"
-                    phone="58725629"
-                    position="Photographer"/>
+                    sling:resourceType="lor/components/mediaslidercustom">
+                    <mediasliderdetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            layout="image"
+                            location="NEW NOW, SERBIA"
+                            navigationRoot="/content/dam/lor/img1.jpg"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            caption="This is some caption."
+                            layout="image"
+                            navigationRoot="/content/dam/lor/img3.jpg"/>
+                    </mediasliderdetailswithmap>
+                </mediaslidercustom>
+                <timelinecustom
+                    jcr:created="{Date}2022-03-28T11:28:57.145+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T11:30:03.564+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/timelinecustom"
+                    description="This new build covers 55,314m2. It includes 560 beds, and provides complex specialist and critical care treatment for over 600,000 people in south-east Wales. It offers an 24-hours acute assessment unit and emergency department, and incorporates 11 operating theatres, one Cat 3 Laboratory, two MRI Suites, two CT suites and an education block.  We digitally engineered 4,000 concrete components and manufactured them 200 miles away from the site at Explore Industrial Park in Derbyshire. These products included 7,000m2 of sandwich panels, and 612 columns – which we delivered to the site for construction. From planning to build, this is our unique, joined up approach in action."
+                    title="Serving hundreds of thousands of patients - timeline">
+                    <timelinedetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            somebutton="Button text"
+                            sometext="Contracts signed. Laing O'Rourke begins the DfMaA process in close collaboration with Aneuran Bevan University Health Board."
+                            sometitle="DATE LABEL HERE"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            somebutton="Button text"
+                            sometext="Contracts signed. Laing O'Rourke begins the DfMaA process in close collaboration with Aneuran Bevan University Health Board."
+                            sometitle="DATE LABEL HERE"/>
+                    </timelinedetailswithmap>
+                </timelinecustom>
+                <videocustom
+                    jcr:created="{Date}2022-03-28T11:25:58.300+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T11:27:37.200+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/videocustom"
+                    description="Description"
+                    navigationRoot="/content/dam/lor/Animation-4Doverall.mp4"
+                    title="Video"/>
+                <statscustom
+                    jcr:created="{Date}2022-03-31T15:05:42.626+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T15:08:11.377+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/statscustom">
+                    <statsdetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/lor/cat.gif"
+                            number="1800+"
+                            text="Lorem ipsum dolor sit amet."/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/lor/cat.gif"
+                            number="70%"
+                            text="Lorem ipsum dolor sit amet."/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            navigationRoot="/content/dam/lor/cat.gif"
+                            number="$99"
+                            text="Lorem ipsum dolor sit amet."/>
+                    </statsdetailswithmap>
+                </statscustom>
                 <accordioncustom
                     jcr:created="{Date}2022-03-28T09:36:22.053+02:00"
                     jcr:createdBy="admin"
@@ -98,27 +162,33 @@
                 <tablecustom
                     jcr:created="{Date}2022-03-28T10:07:07.876+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-28T10:28:49.906+02:00"
+                    jcr:lastModified="{Date}2022-03-31T15:09:54.140+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="lor/components/tablecustom"
-                    titlefour="Column 4"
-                    titleone="Column 1"
-                    titlethree="Column 3"
-                    titletwo="Column 2">
+                    titlefour="Column Title"
+                    titleone="Column Title"
+                    titlethree="Column Title"
+                    titletwo="Column Title">
                     <tabledetailswithmap jcr:primaryType="nt:unstructured">
                         <item0
                             jcr:primaryType="nt:unstructured"
-                            cellfour="Cell four"
-                            cellone="Cell One"
-                            cellthree="Cell three"
-                            celltwo="Cell two"/>
+                            cellfour="Table content"
+                            cellone="Table content"
+                            cellthree="Table content"
+                            celltwo="Table content"/>
                         <item1
                             jcr:primaryType="nt:unstructured"
-                            cellfour="Cell Four"
-                            cellone="Cell One"
-                            cellthree="Cell Three"
-                            celltwo="Cell Two"/>
+                            cellfour="Table content"
+                            cellone="Table content"
+                            cellthree="Table content"
+                            celltwo="Table content"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            cellfour="Table content"
+                            cellone="Table content"
+                            cellthree="Table content"
+                            celltwo="Table content"/>
                     </tabledetailswithmap>
                 </tablecustom>
                 <tabscustom
@@ -139,6 +209,100 @@
                             text="Tab 2 text"/>
                     </tabdetailswithmap>
                 </tabscustom>
+                <container_98228268
+                    jcr:created="{Date}2022-03-31T15:24:08.269+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T15:24:23.347+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container"
+                    layout="responsiveGrid">
+                    <image
+                        jcr:created="{Date}2022-03-31T15:24:29.477+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-31T15:25:18.323+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/image"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/lor/image.jpg"
+                        isDecorative="true"
+                        titleValueFromDAM="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="4"/>
+                        </cq:responsive>
+                    </image>
+                    <ticket
+                        cq:styleIds="[1646985698726]"
+                        jcr:created="{Date}2022-03-31T15:24:42.207+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-31T15:25:43.690+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/ticket"
+                        description="This new build covers 55,314m2. It includes 560 beds, and provides complex specialist and critical care treatment for over 600,000 people in south-east Wales. It offers an 24-hours acute assessment unit and emergency department, and incorporates 11 operating theatres, one Cat 3 Laboratory, two MRI Suites, two CT suites and an education block."
+                        fileReference="/content/dam/lor/image.jpg"
+                        layout="sticky"
+                        ticketHeader=" "
+                        title="Lorem ipsum ">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="5"/>
+                        </cq:responsive>
+                    </ticket>
+                </container_98228268>
+                <container_217084447
+                    jcr:created="{Date}2022-03-31T15:35:04.404+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T15:35:14.973+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container"
+                    layout="responsiveGrid">
+                    <ticket
+                        cq:styleIds="[1646985698726]"
+                        jcr:created="{Date}2022-03-31T15:35:31.798+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-31T15:36:13.833+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/ticket"
+                        description="This new build covers 55,314m2. It includes 560 beds, and provides complex specialist and critical care treatment for over 600,000 people in south-east Wales. It offers an 24-hours acute assessment unit and emergency department, and incorporates 11 operating theatres, one Cat 3 Laboratory, two MRI Suites, two CT suites and an education block."
+                        fileReference="/content/dam/lor/img3.jpg"
+                        layout="sticky"
+                        ticketHeader=" "
+                        title="Lorem ipsum sit dolor">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="4"/>
+                        </cq:responsive>
+                    </ticket>
+                    <image
+                        jcr:created="{Date}2022-03-31T15:35:39.595+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-31T15:36:22.905+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/image"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/lor/img3.jpg"
+                        isDecorative="true"
+                        titleValueFromDAM="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="5"/>
+                        </cq:responsive>
+                    </image>
+                </container_217084447>
                 <imageslidercustom
                     jcr:created="{Date}2022-03-28T09:40:19.342+02:00"
                     jcr:createdBy="admin"
@@ -181,40 +345,78 @@
                             text="image 8"/>
                     </imagesliderdetailswithmap>
                 </imageslidercustom>
-                <videocustom
-                    jcr:created="{Date}2022-03-28T11:25:58.300+02:00"
+                <contactdetails_10856
+                    jcr:created="{Date}2022-03-31T15:45:36.686+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-28T11:27:37.200+02:00"
+                    jcr:lastModified="{Date}2022-03-31T15:47:42.750+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/videocustom"
-                    description="Description"
-                    navigationRoot="/content/dam/lor/Animation-4Doverall.mp4"
-                    title="Video"/>
-                <timelinecustom
-                    jcr:created="{Date}2022-03-28T11:28:57.145+02:00"
+                    sling:resourceType="lor/components/contactdetails"
+                    email="info@laingorourke.com"
+                    fileReference="/content/dam/lor/author.jpg"
+                    name="Victoria Head"
+                    phone="+44 (0)1322 296200"
+                    position="Project Director"/>
+                <socialmedia
+                    jcr:created="{Date}2022-03-31T15:40:52.931+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-28T11:30:03.564+02:00"
+                    jcr:lastModified="{Date}2022-03-31T15:40:52.931+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="lor/components/timelinecustom"
-                    description="This new build covers 55,314m2. It includes 560 beds, and provides complex specialist and critical care treatment for over 600,000 people in south-east Wales. It offers an 24-hours acute assessment unit and emergency department, and incorporates 11 operating theatres, one Cat 3 Laboratory, two MRI Suites, two CT suites and an education block.  We digitally engineered 4,000 concrete components and manufactured them 200 miles away from the site at Explore Industrial Park in Derbyshire. These products included 7,000m2 of sandwich panels, and 612 columns – which we delivered to the site for construction. From planning to build, this is our unique, joined up approach in action."
-                    title="Serving hundreds of thousands of patients - timeline">
-                    <timelinedetailswithmap jcr:primaryType="nt:unstructured">
+                    sling:resourceType="lor/components/socialmedia"/>
+                <extralinkspanelcusto
+                    jcr:created="{Date}2022-03-31T15:41:21.143+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T15:42:35.525+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/extralinkspanelcustom"
+                    title="Extra links panel">
+                    <extralinkspaneldetailswithmap jcr:primaryType="nt:unstructured">
                         <item0
                             jcr:primaryType="nt:unstructured"
-                            somebutton="Button text"
-                            sometext="Contracts signed. Laing O'Rourke begins the DfMaA process in close collaboration with Aneuran Bevan University Health Board."
-                            sometitle="DATE LABEL HERE"/>
+                            layout="external"
+                            link="Link to something goes here"/>
                         <item1
                             jcr:primaryType="nt:unstructured"
-                            somebutton="Button text"
-                            sometext="Contracts signed. Laing O'Rourke begins the DfMaA process in close collaboration with Aneuran Bevan University Health Board."
-                            sometitle="DATE LABEL HERE"/>
-                    </timelinedetailswithmap>
-                </timelinecustom>
+                            layout="external"
+                            link="Link to something goes here"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            layout="chain"
+                            link="Link to something goes here"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            layout="chain"
+                            link="Link to something goes here"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            layout="chain"
+                            link="Link to something goes here"/>
+                    </extralinkspaneldetailswithmap>
+                </extralinkspanelcusto>
+                <downloadscustom_596754068
+                    jcr:created="{Date}2022-03-31T15:43:37.339+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T15:44:42.723+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/downloadscustom"
+                    date="30.10.2020."
+                    description="Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. "
+                    header="Lorem ipsum dolor sit amet">
+                    <downloadscustomdetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            assettodownload="Download PDF"
+                            navigationRoot="/content/dam/lor/cat.gif"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            assettodownload="Download pack"
+                            navigationRoot="/content/dam/lor/cat.gif"/>
+                    </downloadscustomdetailswithmap>
+                </downloadscustom_596754068>
                 <container_1787734799
-                    cq:styleIds="[1648640854664]"
                     jcr:created="{Date}2022-03-30T11:16:16.640+02:00"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2022-03-30T11:16:39.979+02:00"
@@ -223,6 +425,7 @@
                     sling:resourceType="lor/components/container"
                     layout="responsiveGrid">
                     <ticket
+                        cq:styleIds="[1646985698726]"
                         jcr:created="{Date}2022-03-30T10:34:50.268+02:00"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2022-03-30T10:58:31.657+02:00"
@@ -242,9 +445,10 @@
                         </cq:responsive>
                     </ticket>
                     <ticket_1991078589
+                        cq:styleIds="[1646985698726]"
                         jcr:created="{Date}2022-03-30T10:56:44.300+02:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-30T10:58:45.651+02:00"
+                        jcr:lastModified="{Date}2022-03-31T17:18:43.537+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="lor/components/ticket"
@@ -261,6 +465,7 @@
                         </cq:responsive>
                     </ticket_1991078589>
                     <ticket_1145071490
+                        cq:styleIds="[1646985698726]"
                         jcr:created="{Date}2022-03-30T10:57:10.744+02:00"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2022-03-30T10:58:50.583+02:00"
@@ -280,114 +485,136 @@
                         </cq:responsive>
                     </ticket_1145071490>
                 </container_1787734799>
-                <container_374699744
-                    cq:styleIds="[1648640862836]"
-                    jcr:created="{Date}2022-03-30T13:48:34.663+02:00"
+                <contactdetails
+                    jcr:created="{Date}2022-03-17T10:50:45.235+01:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-30T13:51:38.341+02:00"
+                    jcr:lastModified="{Date}2022-03-28T13:13:50.420+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/contactdetails"
+                    description="123456789"
+                    email="roswells@gmail.com"
+                    fileReference="/content/dam/we-retail/en/products/apparel/shirts/Shirts_women.jpg"
+                    name="Stacey Roswells"
+                    phone="58725629"
+                    position="Photographer"/>
+                <container_1733911970
+                    jcr:created="{Date}2022-03-31T15:10:08.512+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T15:10:24.991+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="lor/components/container"
                     layout="responsiveGrid">
-                    <text
-                        jcr:created="{Date}2022-03-30T13:48:52.200+02:00"
+                    <container_374699744
+                        cq:styleIds="[1648640862836]"
+                        jcr:created="{Date}2022-03-30T13:48:34.663+02:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-30T13:52:40.397+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="lor/components/text"
-                        text="&lt;h3>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;You may also be interested in...&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/h3>&#xd;&#xa;"
-                        textIsRich="true"/>
-                    <container
-                        jcr:created="{Date}2022-03-30T13:51:31.600+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-30T13:51:50.441+02:00"
+                        jcr:lastModified="{Date}2022-03-30T13:51:38.341+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="lor/components/container"
                         layout="responsiveGrid">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="1"
-                                width="9"/>
-                        </cq:responsive>
-                        <ticketlatest
-                            jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-30T13:50:16.447+02:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="lor/components/ticketlatest"
-                            description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
-                            downloadPdf="/content/dam/lor/asset.jpg"
-                            fileReference="/content/dam/lor/img3.jpg"
-                            layout="related"
-                            subtitle="by Jack Daniel Lloyd Davies"
-                            tag="08.06.20"
-                            ticketHeader="MODERN CONSTRUCTION"
-                            title="Underpining sustainable construction">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="3"/>
-                            </cq:responsive>
-                        </ticketlatest>
-                        <ticketlatest_copy
-                            jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-30T13:50:16.447+02:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="lor/components/ticketlatest"
-                            description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
-                            downloadPdf="/content/dam/lor/asset.jpg"
-                            fileReference="/content/dam/lor/img3.jpg"
-                            layout="related"
-                            subtitle="by Jack Daniel Lloyd Davies"
-                            tag="08.06.20"
-                            ticketHeader="MODERN CONSTRUCTION"
-                            title="Underpining sustainable construction">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="3"/>
-                            </cq:responsive>
-                        </ticketlatest_copy>
-                        <ticketlatest_copy_19
-                            jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-30T13:50:16.447+02:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="lor/components/ticketlatest"
-                            description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
-                            downloadPdf="/content/dam/lor/asset.jpg"
-                            fileReference="/content/dam/lor/img3.jpg"
-                            layout="related"
-                            subtitle="by Jack Daniel Lloyd Davies"
-                            tag="08.06.20"
-                            ticketHeader="MODERN CONSTRUCTION"
-                            title="Underpining sustainable construction">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="3"/>
-                            </cq:responsive>
-                        </ticketlatest_copy_19>
                         <text
-                            jcr:created="{Date}2022-03-30T14:45:03.979+02:00"
+                            jcr:created="{Date}2022-03-30T13:48:52.200+02:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-30T14:45:49.559+02:00"
+                            jcr:lastModified="{Date}2022-03-31T17:16:36.523+02:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="lor/components/text"
-                            text="&lt;h3>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Discover more of our projects around the globe&lt;/h3>&#xd;&#xa;"
+                            text="&lt;h3>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;You may also be interested in...&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/h3>&#xa;"
                             textIsRich="true"/>
                         <container
+                            jcr:created="{Date}2022-03-30T13:51:31.600+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-30T13:51:50.441+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/container"
+                            layout="responsiveGrid">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="1"
+                                    width="9"/>
+                            </cq:responsive>
+                            <ticketlatest
+                                jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-30T13:50:16.447+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
+                                downloadPdf="/content/dam/lor/asset.jpg"
+                                fileReference="/content/dam/lor/img3.jpg"
+                                layout="related"
+                                subtitle="by Jack Daniel Lloyd Davies"
+                                tag="08.06.20"
+                                ticketHeader="MODERN CONSTRUCTION"
+                                title="Underpining sustainable construction">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                            </ticketlatest>
+                            <ticketlatest_copy
+                                jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-30T13:50:16.447+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
+                                downloadPdf="/content/dam/lor/asset.jpg"
+                                fileReference="/content/dam/lor/img3.jpg"
+                                layout="related"
+                                subtitle="by Jack Daniel Lloyd Davies"
+                                tag="08.06.20"
+                                ticketHeader="MODERN CONSTRUCTION"
+                                title="Underpining sustainable construction">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                            </ticketlatest_copy>
+                            <ticketlatest_copy_19
+                                jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-30T13:50:16.447+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
+                                downloadPdf="/content/dam/lor/asset.jpg"
+                                fileReference="/content/dam/lor/img3.jpg"
+                                layout="related"
+                                subtitle="by Jack Daniel Lloyd Davies"
+                                tag="08.06.20"
+                                ticketHeader="MODERN CONSTRUCTION"
+                                title="Underpining sustainable construction">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                            </ticketlatest_copy_19>
+                        </container>
+                        <text_100526488
+                            jcr:created="{Date}2022-03-30T14:45:03.979+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-31T17:16:47.026+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/text"
+                            text="&lt;h3>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Discover more of our projects around the globe&lt;/h3>&#xa;"
+                            textIsRich="true"/>
+                        <container_2878475
                             jcr:created="{Date}2022-03-30T14:43:28.087+02:00"
                             jcr:createdBy="admin"
                             jcr:lastModified="{Date}2022-03-30T14:43:37.239+02:00"
@@ -461,93 +688,93 @@
                                         width="4"/>
                                 </cq:responsive>
                             </ticketlatest_copy_co_54422764>
-                        </container>
-                    </container>
-                    <text_copy
-                        jcr:created="{Date}2022-03-30T13:48:52.200+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-30T14:12:50.410+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="lor/components/text"
-                        text="&lt;h3>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Related pages&lt;/h3>&#xd;&#xa;"
-                        textIsRich="true"/>
-                    <container_757612585
-                        jcr:created="{Date}2022-03-30T14:13:20.302+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-30T14:13:46.965+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="lor/components/container"
-                        layout="responsiveGrid">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
+                        </container_2878475>
+                        <text_copy
+                            jcr:created="{Date}2022-03-30T13:48:52.200+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-31T17:17:06.507+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/text"
+                            text="&lt;h3>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Related pages&lt;/h3>&#xa;"
+                            textIsRich="true"/>
+                        <container_757612585
+                            jcr:created="{Date}2022-03-30T14:13:20.302+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-30T14:13:46.965+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/container"
+                            layout="responsiveGrid">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="1"
+                                    width="9"/>
+                            </cq:responsive>
+                            <ticketlatest_copy
+                                jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-30T14:27:05.728+02:00"
+                                jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
-                                offset="1"
-                                width="9"/>
-                        </cq:responsive>
-                        <ticketlatest_copy
-                            jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-30T14:27:05.728+02:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="lor/components/ticketlatest"
-                            description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
-                            downloadPdf="/content/dam/lor/asset.jpg"
-                            fileReference="/content/dam/lor/img3.jpg"
-                            layout="related"
-                            subtitle="by Jack Daniel Lloyd Davies"
-                            title="Underpining sustainable construction">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="3"/>
-                            </cq:responsive>
-                        </ticketlatest_copy>
-                        <ticketlatest_copy_co
-                            jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-30T14:27:05.728+02:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="lor/components/ticketlatest"
-                            description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
-                            downloadPdf="/content/dam/lor/asset.jpg"
-                            fileReference="/content/dam/lor/img3.jpg"
-                            layout="related"
-                            subtitle="by Jack Daniel Lloyd Davies"
-                            title="Underpining sustainable construction">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="3"/>
-                            </cq:responsive>
-                        </ticketlatest_copy_co>
-                        <ticketlatest_copy_co_721817354
-                            jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-30T14:27:05.728+02:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="lor/components/ticketlatest"
-                            description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
-                            downloadPdf="/content/dam/lor/asset.jpg"
-                            fileReference="/content/dam/lor/img3.jpg"
-                            layout="related"
-                            subtitle="by Jack Daniel Lloyd Davies"
-                            title="Underpining sustainable construction">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="3"/>
-                            </cq:responsive>
-                        </ticketlatest_copy_co_721817354>
-                    </container_757612585>
-                </container_374699744>
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
+                                downloadPdf="/content/dam/lor/asset.jpg"
+                                fileReference="/content/dam/lor/img3.jpg"
+                                layout="related"
+                                subtitle="by Jack Daniel Lloyd Davies"
+                                title="Underpining sustainable construction">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                            </ticketlatest_copy>
+                            <ticketlatest_copy_co
+                                jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-30T14:27:05.728+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
+                                downloadPdf="/content/dam/lor/asset.jpg"
+                                fileReference="/content/dam/lor/img3.jpg"
+                                layout="related"
+                                subtitle="by Jack Daniel Lloyd Davies"
+                                title="Underpining sustainable construction">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                            </ticketlatest_copy_co>
+                            <ticketlatest_copy_co_721817354
+                                jcr:created="{Date}2022-03-30T13:49:19.855+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2022-03-30T14:27:05.728+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="lor/components/ticketlatest"
+                                description="Faucibus est litora mattis vehicula primis arcu eu vivamus"
+                                downloadPdf="/content/dam/lor/asset.jpg"
+                                fileReference="/content/dam/lor/img3.jpg"
+                                layout="related"
+                                subtitle="by Jack Daniel Lloyd Davies"
+                                title="Underpining sustainable construction">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="3"/>
+                                </cq:responsive>
+                            </ticketlatest_copy_co_721817354>
+                        </container_757612585>
+                    </container_374699744>
+                </container_1733911970>
             </container>
         </root>
     </jcr:content>

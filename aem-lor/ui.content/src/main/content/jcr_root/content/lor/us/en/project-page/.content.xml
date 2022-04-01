@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-31T17:00:41.129+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/lor/settings/wcm/templates/homepage1"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Project Page"
+        sling:resourceType="lor/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="lor/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2022-03-31T17:00:13.456+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="lor/components/container"
+                backgroundColor="#fffffe"
+                layout="responsiveGrid">
+                <image
+                    jcr:created="{Date}2022-03-31T17:00:17.976+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T17:00:19.510+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/image"
+                    fileReference="/content/dam/lor/banner-img.jpg"/>
+                <container
+                    cq:styleIds="[1648462602858]"
+                    jcr:created="{Date}2022-03-31T17:00:24.818+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T17:00:24.818+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="3"
+                            width="6"/>
+                    </cq:responsive>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
