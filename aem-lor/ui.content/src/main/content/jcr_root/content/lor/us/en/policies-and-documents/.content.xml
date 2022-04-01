@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-31T16:56:01.755+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/lor/settings/wcm/templates/homepage1"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Policies and Documents"
+        sling:resourceType="lor/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="lor/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2022-03-31T16:56:01.752+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="lor/components/container"
+                backgroundColor="#fffffe"
+                layout="responsiveGrid">
+                <image
+                    jcr:created="{Date}2022-03-31T16:39:15.348+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T16:44:49.546+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/image"
+                    fileReference="/content/dam/lor/banner-img.jpg"/>
+                <tabs
+                    jcr:created="{Date}2022-03-31T16:39:40.211+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T16:39:40.211+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/tabs">
+                    <item_1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 1"
+                        sling:resourceType="lor/components/container"
+                        layout="responsiveGrid"/>
+                    <item_2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 2"
+                        sling:resourceType="lor/components/container"
+                        layout="responsiveGrid"/>
+                </tabs>
+                <container
+                    cq:styleIds="[1648640862836]"
+                    jcr:created="{Date}2022-03-31T16:39:54.667+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T16:40:32.873+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/container"
+                    layout="responsiveGrid">
+                    <container
+                        jcr:created="{Date}2022-03-31T16:40:25.562+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-31T16:40:51.746+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="lor/components/container"
+                        layout="responsiveGrid">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="10"/>
+                        </cq:responsive>
+                        <ticketlatest
+                            jcr:created="{Date}2022-03-31T16:40:46.449+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-31T16:41:21.807+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/ticketlatest"
+                            description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                            fileReference="/content/dam/lor/img3.jpg"
+                            layout="related"
+                            subtitle="By Jack Daniel Lloyd Davies"
+                            tag="08.06.20"
+                            ticketHeader="Our experience"
+                            title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend.">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                            </cq:responsive>
+                        </ticketlatest>
+                        <ticketlatest_copy
+                            jcr:created="{Date}2022-03-31T16:40:46.449+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-31T16:41:21.807+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/ticketlatest"
+                            description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                            fileReference="/content/dam/lor/img3.jpg"
+                            layout="related"
+                            subtitle="By Jack Daniel Lloyd Davies"
+                            tag="08.06.20"
+                            ticketHeader="Our experience"
+                            title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend.">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                            </cq:responsive>
+                        </ticketlatest_copy>
+                        <ticketlatest_copy_1901552352
+                            jcr:created="{Date}2022-03-31T16:40:46.449+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-03-31T16:41:21.807+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="lor/components/ticketlatest"
+                            description="In at hac parturient rutrum pharetra morbi mi gravida consectetur aptent parturient arcu scelerisque himenaeos sem dapibus taciti."
+                            fileReference="/content/dam/lor/img3.jpg"
+                            layout="related"
+                            subtitle="By Jack Daniel Lloyd Davies"
+                            tag="08.06.20"
+                            ticketHeader="Our experience"
+                            title="At at mus pharetra id venenatis vulputate et libero suspendisse eleifend.">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                            </cq:responsive>
+                        </ticketlatest_copy_1901552352>
+                    </container>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
