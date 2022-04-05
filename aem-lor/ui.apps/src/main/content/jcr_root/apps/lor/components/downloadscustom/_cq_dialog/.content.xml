@@ -23,6 +23,7 @@
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                 fieldLabel="Date"
                                 name="./date"/>
+                                required="{Boolean}false"/>
                             <header
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
