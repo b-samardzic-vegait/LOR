@@ -1,0 +1,12 @@
+<div 
+    data-sly-use.breadcrumbCustom="com.adobe.aem.guides.wknd.core.models.BreadcrumbCustom">
+    <div class="breadcrumbs">
+        <div class="wrap">
+            <ul class="breadcrumbs__list" role="menubar" data-sly-list.item="${breadcrumbCustom.breadcrumbDetailsWithMap}">
+                <li class="breadcrumbs__item" role="menuitem">
+                    <a href='${item.navigationRoot}' class="breadcrumbs__link">${item.title}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
