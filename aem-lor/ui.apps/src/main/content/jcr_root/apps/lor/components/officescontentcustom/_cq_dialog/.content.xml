@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Offices Content Custom"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}false">
+                <items jcr:primaryType="nt:unstructured">
+                    <!--<navigationRoot
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="The root page from which to build the navigation. Can be a blueprint master, language master or regular page."
+                        fieldLabel="Navigation Root"
+                        name="./navigationRoot"
+                        required="{Boolean}true"
+                        rootPath="/content"
+                        value="${not empty cqDesign.navigationRoot ? cqDesign.navigationRoot : ''}"/>
+                    <phone
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Phone number"
+                        name="./phone"/>
+                    <email
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Email address"
+                        name="./email"/>
+                    <address
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Address"
+                        name="./address"/>
+                    <multifieldwithmap
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multifieldwithmap"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="true">
+                        <items jcr:primaryType="nt:unstructured">                            
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <officescontentdetailswithmap
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Offices Content Details"
+                                        fieldLabel="Offices Content Details"
+                                        required="{Boolean}false">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            emptyText="Offices Content Details"
+                                            name="./officescontentdetailswithmap">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <day
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Day"
+                                                    fieldLabel="Day"
+                                                    name="./day"/>
+                                                <workingHours
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Working hours"
+                                                    fieldLabel="Working hours"
+                                                    name="./workingHours"/>
+                                            </items>
+                                        </field>
+                                    </officescontentdetailswithmap>
+                                </items>
+                            </well>
+                        </items>
+                    </multifieldwithmap>-->
+                    <multifieldwithmap
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multifieldwithmap"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <navigationRoot
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="The root page from which to build the navigation. Can be a blueprint master, language master or regular page."
+                                fieldLabel="Navigation Root"
+                                name="./navigationRoot"
+                                required="{Boolean}true"
+                                rootPath="/content"
+                                value="${not empty cqDesign.navigationRoot ? cqDesign.navigationRoot : ''}"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Phone number"
+                                name="./phone"/>
+                            <email
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Email address"
+                                name="./email"/>
+                            <address
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Address"
+                                name="./address"/>
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <officescontentdetailswithmap
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Office Content Details"
+                                        fieldLabel="Office Content Details"
+                                        required="{Boolean}false">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            emptyText="Office Content Details"
+                                            name="./officescontentdetailswithmap">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <day
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Day"
+                                                    fieldLabel="Day"
+                                                    name="./day"/>
+                                                <workingHours
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Working hours"
+                                                    fieldLabel="Working hours"
+                                                    name="./workingHours"/>     
+                                            </items>
+                                        </field>
+                                    </officescontentdetailswithmap>
+                                </items>
+                            </well>
+                        </items>
+                    </multifieldwithmap>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
