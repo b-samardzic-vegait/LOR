@@ -218,7 +218,7 @@ const search = {
 	},
 
 	hideEmptySection() {
-		if (this.$searchInput.val().length === 0) {
+		if (this.$searchInput.val() && this.$searchInput.val().length === 0) {
 			this.$searchContent.hide();
     		//let searchImg = $('.search-icon')
     		//searchImg.attr('src', '/content/dam/lor/ico-close.svg');
