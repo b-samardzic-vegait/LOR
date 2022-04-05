@@ -1,0 +1,157 @@
+package com.adobe.aem.guides.wknd.core.services.impl;
+
+import com.adobe.aem.guides.wknd.core.services.SearchService;
+import com.adobe.aem.guides.wknd.core.utils.ResolverUtil;
+import com.day.cq.search.PredicateGroup;
+import com.day.cq.search.Query;
+import com.day.cq.search.QueryBuilder;
+import com.day.cq.search.result.Hit;
+import com.day.cq.search.result.SearchResult;
+import com.day.cq.wcm.api.Page;
+import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.jcr.Node;
+import javax.jcr.NodeIterator;
+import javax.jcr.Session;
+import javax.jcr.query.QueryResult;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+@Component(service = SearchService.class, immediate = true)
+public class SearchServiceImpl implements SearchService {
+    
+    private static final Logger LOG = LoggerFactory.getLogger(SearchServiceImpl.class);
+
+    @Reference
+    QueryBuilder queryBuilder;
+
+    @Reference
+    ResourceResolverFactory resourceResolverFactory;
+
+    @Activate
+    public void activate() {
+        LOG.info("\n -----ACTIVATE METHOD-----");
+    }
+
+    public Map<String, String> createTextSearchQuery(String searchText, int startResult, int resultPerPage) {
+        Map<String, String> queryMap = new HashMap<>();
+        queryMap.put("path", "/content/we-retail");
+        queryMap.put("type", "cq:Page");
+        queryMap.put("fulltext", searchText);
+        queryMap.put("p.offset", Long.toString(startResult));
+        queryMap.put("p.limit", Long.toString(resultPerPage));
+        return queryMap;
+    }
+
+    @Override
+    public JSONObject searchResult(String searchText, int startResult, int resultPerPage) {
+        JSONObject searchResult = new JSONObject();
+        try {
+            ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
+            final Session session = resourceResolver.adaptTo(Session.class);
+            Query query = queryBuilder.createQuery(PredicateGroup.create(createTextSearchQuery(searchText, startResult, resultPerPage)), session);
+
+            SearchResult result = query.getResult();
+
+            int perPageResults = result.getHits().size();
+            long totalResults = result.getTotalMatches();
+            long startingResult = result.getStartIndex();
+            double totalPages = Math.ceil((double) totalResults / (double) resultPerPage);
+
+            searchResult.put("perpageresult", perPageResults);
+            searchResult.put("totalresults", totalResults);
+            searchResult.put("startingresult", startingResult);
+            searchResult.put("pages", totalPages);
+
+            List<Hit> hits = result.getHits();
+            JSONArray resultArray = new JSONArray();
+            for (Hit hit : hits) {
+                Page page = hit.getResource().adaptTo(Page.class);
+                JSONObject resultObject = new JSONObject();
+                resultObject.put("title", page.getTitle());
+                resultObject.put("path", page.getPath());
+                resultArray.put(resultObject);
+                LOG.info("\n Page {} ", page.getPath());
+            }
+            searchResult.put("results", resultArray);
+        } catch (Exception e) {
+            LOG.info("\n ERROR query builder {}", e.getMessage());
+        }
+        return searchResult;
+    }
+
+    @Override
+    public JSONObject searchResultSQL2(String searchPath) {
+        LOG.info("\n Searching {}", searchPath);
+        JSONObject searchResult = new JSONObject();
+        try {
+            String sql2Query = "SELECT * FROM [cq:PageContent] AS node WHERE ISDESCENDANTNODE (" + searchPath + ") ORDER BY node.[jcr:title]";
+            ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
+            final Session session = resourceResolver.adaptTo(Session.class);
+            final javax.jcr.query.Query query = session.getWorkspace().getQueryManager().createQuery(sql2Query, javax.jcr.query.Query.JCR_SQL2);
+            final QueryResult result = query.execute();
+            NodeIterator pages = result.getNodes();
+            JSONArray resultArray = new JSONArray();
+            while (pages.hasNext()) {
+                Node page = pages.nextNode();
+                if (page.hasProperty("jcr:title")) {
+                    JSONObject resultObject = new JSONObject();
+                    resultObject.put("title", page.getProperty("jcr:title").getString());
+                    resultObject.put("name", page.getName());
+                    resultObject.put("created", page.getProperty("jcr:created").getString());
+                    resultArray.put(resultObject);
+                }
+            }
+            searchResult.put("Pages", resultArray);
+        } catch (Exception e) {
+            LOG.info("\n -----ERROR SQL2----- {}", e.getMessage());
+        }
+        return searchResult;
+    }
+
+
+    public Map<String, String> createTextSearchQuery(String searchText) {
+        Map<String, String> queryMap = new HashMap<>();
+        queryMap.put("path", "/content/lor");
+        queryMap.put("type", "cq:Page");
+        queryMap.put("fulltext", searchText);
+        return queryMap;
+    }
+
+    @Override
+    public JSONObject searchResult(String searchText) {
+        JSONObject searchResult = new JSONObject();
+        try {
+            ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
+            final Session session = resourceResolver.adaptTo(Session.class);
+            Query query = queryBuilder.createQuery(PredicateGroup.create(createTextSearchQuery(searchText)), session);
+
+            SearchResult result = query.getResult();
+
+            List<Hit> hits = result.getHits();
+            JSONArray resultArray = new JSONArray();
+            for (Hit hit : hits) {
+                Page page = hit.getResource().adaptTo(Page.class);
+                JSONObject resultObject = new JSONObject();
+                resultObject.put("title", page.getTitle());
+                resultObject.put("path", page.getPath());
+                resultArray.put(resultObject);
+                LOG.info("\n Page {} ", page.getPath());
+            }
+            searchResult.put("results", resultArray);
+        } catch (Exception e) {
+            LOG.info("\n ERROR query builder {}", e.getMessage());
+        }
+        return searchResult;
+    }
+}

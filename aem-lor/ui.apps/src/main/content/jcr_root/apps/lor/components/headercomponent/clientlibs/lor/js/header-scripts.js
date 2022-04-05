@@ -187,6 +187,7 @@ const search = {
 	$noResults: $('.documents__no-results-holder'),
 	$searchDataBottom: $('.search-data__bottom'),
 
+
 	init: function() {
 		this.hideEmptySection();
 		this.inputOnchange();
@@ -196,12 +197,32 @@ const search = {
 		this.reset();
 	},
 
+    searchGet: function(token) {
+		$.ajax({
+				url : 'http://localhost:4502/wknd/search?searchText=' + token ,
+				type : 'GET',
+				success : function(result) {
+            		console.log("success " + token)
+            		console.log(result)
+            		$('.search-results').empty();
+            		for (let i = 0; i < result.results.length; i++) {
+            			$('.search-results').append(
+            						'<div class="search-data__item"><span class="search-data__name text">' + result.results[i].title + '</span><div class="search-data__content"><p class="search-data__text text">' + token + '</p></div></div>'
+            			);
+        			}
+				},
+				error : function(XMLHttpRequest, textStatus, errorThrown) {
+            		console.log("fail " + token)
+				}
+			});
+	},
+
 	hideEmptySection() {
 		if (this.$searchInput.val().length === 0) {
 			this.$searchContent.hide();
-    		let searchImg = $('.search-icon')
+    		//let searchImg = $('.search-icon')
     		//searchImg.attr('src', '/content/dam/lor/ico-close.svg');
-    		console.log($searchImg)
+    		//console.log($searchImg)
 		}
 	},
 
@@ -228,6 +249,8 @@ const search = {
 		this.$searchInput.on('input', helpers.delay(() => {                                       
 			this.$form.submit();
             console.log("D")
+        	console.log(this.$searchInput.val())
+        	this.searchGet(this.$searchInput.val());
 		}, 200));
 
 		this.$searchButton.on('click', (e) => {
