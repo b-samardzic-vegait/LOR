@@ -2,6 +2,9 @@ package com.adobe.aem.guides.wknd.core.servlets;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
+
+import com.adobe.aem.guides.wknd.core.services.SearchService;
+
 import java.io.IOException;
 
 
@@ -26,8 +29,8 @@ public class SearchServlet extends SlingAllMethodsServlet {
 
     private static final Logger LOG = LoggerFactory.getLogger(SearchServlet.class);
 
-    /*@Reference
-    SearchService searchService;*/
+    @Reference
+    SearchService searchService;
 
     @Override
     protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse res) throws ServletException, IOException {
@@ -40,13 +43,17 @@ public class SearchServlet extends SlingAllMethodsServlet {
             int startResult = pageNumber * resultPerPage;
             searchResult = searchService.searchResult(searchText, startResult, resultPerPage);*/
             // sql2
-            String searchPath = req.getRequestParameter("searchPath").getString();
+            //String searchPath = req.getRequestParameter("searchPath").getString();
             //searchResult = searchService.searchResultSQL2(searchPath);
+
+            String searchText = req.getRequestParameter("searchText").getString();
+            searchResult = searchService.searchResult(searchText);
+
         } catch (Exception e) {
             LOG.info("\n ERROR SERVLET QUERY {}", e.getMessage());
         }
         res.setContentType("application/json");
-        res.getWriter().write(/*searchResult.toString()*/"RESULT");
+        res.getWriter().write(searchResult.toString());
     }
     
 }
