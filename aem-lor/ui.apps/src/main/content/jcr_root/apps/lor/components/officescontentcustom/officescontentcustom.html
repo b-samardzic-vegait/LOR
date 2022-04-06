@@ -1,0 +1,39 @@
+<div
+    data-sly-use.officescontentcustom="com.adobe.aem.guides.wknd.core.models.OfficesContentCustom"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!officescontentcustom.empty}" >
+    
+    <div class="offices__content-wrap offices__content-wrap--absolute js-offices-reappend">
+        <div class="offices__img-holder animation js-animation js-offices-img">
+            <img class="offices__img animation__wipe-delay" src='${properties.navigationRoot}'>
+            <div class="offices__img-bg animation__wipe"></div>
+        </div>
+        <div class="offices__address">
+            <div class="offices__address-holder">
+                <span class="offices__address-tag tag">Phone</span>
+                <span class="offices__address-content">${officescontentcustom.phone}</span>
+            </div>
+            <div class="offices__address-holder">
+                <span class="offices__address-tag tag">Email</span>
+                <span class="offices__address-content">${officescontentcustom.email}</span>
+            </div>
+            <div class="offices__address-holder">
+                <span class="offices__address-tag tag">Address</span>
+                <span class="offices__address-content">${officescontentcustom.address}</span>
+            </div>
+            <a class="offices__view-on-map link" href="javascript:;"> View on Google Maps <span class="icon font-ico-chevron-right"></span>
+            </a>
+        </div>
+        <div class="offices__hours" data-sly-list.item="${officescontentcustom.officesContentDetailsWithMap}">
+            <span class="offices__hours-tag tag">Office Hours</span>
+            <ul class="offices__hours-list" role="menubar">
+                <li class="offices__hours-item" role="menuitem">
+                    <span class="offices__hours-day">${item.day}</span>
+                    <span class="offices__hours-time">${item.workingHours}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
