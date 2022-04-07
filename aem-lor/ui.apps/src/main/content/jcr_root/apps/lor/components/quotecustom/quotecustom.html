@@ -1,0 +1,27 @@
+<div
+    data-sly-use.quotecustom="com.adobe.aem.guides.wknd.core.models.QuoteCustom"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!quotecustom.empty}" >
+    
+    <section class="quote">
+        <div class="wrap">
+            <div class="quote__holder"  data-sly-list.item="${quotecustom.quoteWithMap}">
+                <span>
+                    <img src="/content/dam/lor/ico-quote.svg" style="width:25px;height:25px; filter: invert(57%) sepia(60%) saturate(298%) hue-rotate(105deg) brightness(90%) contrast(93%);"> 
+                </span>
+                <p class="qoute__text">${item.text}</p>
+                <div class="quote__author">
+                    <div class="quote__img-holder">
+                        <img src='${item.navigationRoot}' alt="Author image" class="quote__img">
+                    </div>
+                    <div class="quote__info">
+                        <span class="quote__name">${item.name}</span>
+                        <span class="quote__position">${item.position}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
