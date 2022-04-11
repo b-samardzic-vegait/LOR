@@ -1,0 +1,106 @@
+<div 
+    data-sly-use.plslidercustom="com.adobe.aem.guides.wknd.core.models.PriorityLandingSliderCustom">
+
+    <section class="banner-slider js-banner-slider-holder">
+        <div class="banner-slider__cover-img has-cover js-banner-bg" aria-hidden="true" ></div>
+        <div class="banner-slider__holder">
+            <div class="banner-slider__title-holder animation js-animation">
+                <div class="wrap wrap--small">
+                    <h2 class="banner-slider__title h1 animation__fade-down">${plslidercustom.title}</h2>
+                    <div class="banner-slider__controls">
+                        <div class="slider-controls">
+                            <div class="slider-controls__counter">
+                                <span class="slider-controls__current js-sc-current">1</span>
+                                <span class="slider-controls__total js-sc-total"></span>
+                            </div>
+                            <div class="slider-controls__slider-controls">
+                                <button class="slider-controls__btn slider-controls__btn--prev js-sc-prev" type="button">
+                                    <span class="sr-only">Previus slide</span>
+                                </button>
+                                <button class="slider-controls__btn slider-controls__btn--next js-sc-next" type="button">
+                                    <span class="sr-only">Next slide</span>
+                                </button>
+                                <div class="slider-controls__progress" aria-hidden="true">
+                                    <span class="slider-controls__line js-sc-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-slider__sub-title-holder animation js-animation">
+                            <h3 class="banner-slider__sub-title animation__fade-down">${plslidercustom.description}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-slider__slideshow js-banner-slideshow animation js-animation">
+                <div class="banner-slider__slider js-banner-slider" data-sly-list.item="${plslidercustom.priorityLandingSliderWithMap}">
+                    <div class="banner-slider__slides js-sc-slide js-banner-box">
+                        <div class="banner-slider__content">
+                            <div class="banner-slider__content--img" aria-hidden="true">
+                                <div class="banner-slider__bg-img has-cover js-banner-img"><img class="banner-slider__bg-img has-cover js-banner-img" src='${item.navigationRoot}'></div>
+                            </div>
+                            <div class="banner-slider__bg-txt-holder animation__fade-up">
+                                <span class="banner-slider__bg-txt h2">${item.name}</span>
+                            </div>
+                            <span class="banner-slider__vertical tag js-banner-vertical">${item.location}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-slider__info js-banner-info">
+                    <div class="banner-slider__text-holder">
+                        <div class="banner-slider__text js-banner-text" data-id="1">
+                            <div class="banner-slider__text-wrap">
+                                <div class="banner-slider__tag">
+                                    <span class="banner-slider__text-title tag js-banner-title animation__fade-up">${item.caption}</span>
+                                    <abbr class="banner-slider__country tag" title="United Kindgdom">${item.country}</abbr>
+                                </div>
+                                <div class="banner-slider__location">
+                                    <span class="banner-slider__txt h2 animation__fade-up">${item.name}</span>
+                                </div>
+                                <div class="banner-slider__description-holder">
+                                    <span class="banner-slider__description js-banner-cont-text animation__fade-up">${item.description}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-slider__btn-holder js-banner-btn" data-id="1">
+                            <a class="banner-slider__btn btn js-banner-slider-btn" href="javascript:;">
+                                <span class="icon font-ico-arrow"></span>
+                                <span class="btn__outline">Read more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-slider__controls banner-slider__controls--mobile">
+            <div class="slider-controls">
+                <div class="slider-controls__counter">
+                    <span class="slider-controls__current js-sc-current">1</span>
+                    <span class="slider-controls__total js-sc-total"></span>
+                </div>
+                <div class="slider-controls__slider-controls">
+                    <button class="slider-controls__btn slider-controls__btn--prev js-sc-prev" type="button">
+                        <span class="sr-only">Previus slide</span>
+                    </button>
+                    <button class="slider-controls__btn slider-controls__btn--next js-sc-next" type="button">
+                        <span class="sr-only">Next slide</span>
+                    </button>
+                    <div class="slider-controls__progress" aria-hidden="true">
+                        <span class="slider-controls__line js-sc-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-slider__scroll">
+            <a class="banner-slider__scroll-holder js-banner-scroll" href="javascript:;">
+                <span class="banner-slider__scroll-text">Scroll</span>
+                <span class="icon font-ico-chevron-up"><span class="sr-only">Icon up</span></span>
+                <div class="scroll-down" aria-label="Scroll to main content">
+                    <div class="scroll-down__mouse">
+                        <div class="scroll-down__scroller animation__scroll"></div>
+                    </div>
+                </div>
+                <span class="icon font-ico-chevron-down-wide"><span class="sr-only">Icon down</span></span>
+            </a>
+        </div>
+    </section>
+</div>
