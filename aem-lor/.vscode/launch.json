@@ -13,7 +13,7 @@
 
             "type": "java",
             "name": "Debug (Launch) - Debug AEM 4502",
-            "projectName": "AEM",
+            "projectName": "aem-lor",
             "request": "attach",
             "hostName": "localhost",
             "port": 12345
