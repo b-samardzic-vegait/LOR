@@ -54,32 +54,42 @@ public class WKNDPathTypeServlet extends SlingAllMethodsServlet {
     protected void doPost(SlingHttpServletRequest req, SlingHttpServletResponse res) throws ServletException, IOException {
         try {
             LOG.info("----------STARTED POST----------");
+
             List<RequestParameter> requestParameterList = req.getRequestParameterList();
+
             for (RequestParameter requestParameter : requestParameterList) {
-                LOG.info("\n ==PARAMETERS===> {} {} ", requestParameter.getName(), requestParameter.getString());
+                LOG.info("\n==== PARAMETERS ===> {} {} ", requestParameter.getName(), requestParameter.getString());
             }
+
             ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
             Resource resource = resourceResolver.getResource("/content");
             Resource resourceForm = resourceResolver.getResource("/content/form");
-            Node contentNode = resource.adaptTo(Node.class);
+            
             if (resourceForm != null) {
+                /* Get existing Node */
                 Node contentNodeForm = resourceForm.adaptTo(Node.class);
+                Node parent = contentNodeForm.getParent();
+
+                /* Update existing Node */
                 contentNodeForm.setProperty("fname", requestParameterList.get(0).getString());
                 contentNodeForm.setProperty("lname", requestParameterList.get(1).getString());
                 contentNodeForm.save();
+
+                /* Delete existing Node */
+                contentNodeForm.remove();
+                parent.save();
             } else {
+                /* Create new Node */
+                Node contentNode = resource.adaptTo(Node.class);
                 Node form = contentNode.addNode("form");
                 form.setProperty("fname", requestParameterList.get(0).getString());
                 form.setProperty("lname", requestParameterList.get(1).getString());
-                //final Session session = resourceResolver.adaptTo(Session.class);
-                //Node node = session.getRootNode();
                 contentNode.save();
             }
-            
-            
         } catch (Exception e) {
             LOG.info("\n ERROR IN REQUEST {} ", e.getMessage());
         }
+        
         res.getWriter().write("=FORM SUBMITTED=");
     }
 }
