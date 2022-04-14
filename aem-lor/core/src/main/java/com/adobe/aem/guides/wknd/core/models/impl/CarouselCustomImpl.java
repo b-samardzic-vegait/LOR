@@ -31,7 +31,7 @@ public class CarouselCustomImpl implements CarouselCustom {
 
     @Self @Via("resource")
     Resource componentResource;
-
+   
     @Override
     public List<Map<String, String>> getCarousel() {
         List<Map<String, String>> slides = new ArrayList<>();
@@ -43,24 +43,25 @@ public class CarouselCustomImpl implements CarouselCustom {
                 for (Resource slide : carousel.getChildren()) {
                     Map<String, String> slideProperties = new HashMap<>();
 
-                    String assetType = slide.getValueMap().get("assetType", String.class);
-                    String iAssetLink = slide.getValueMap().get("asset", String.class);
-                    String oAssetLink = "https://www.youtube.com/embed/";
-                    int startIndex = 0, endIndex = 0;
-                    boolean startIndexFlag = false, endIndexFlag = false;                               
-
-                    if(assetType.equals("youtubevideo"))
+                    if((slide.getValueMap().get("assetType", String.class)).equals("youtubevideo")) //youtubevideo
                     {
+                        String iAssetLink = slide.getValueMap().get("asset", String.class);
+                        String oAssetLink = "https://www.youtube.com/embed/";
+                        int startIndex = 0, endIndex = 0;
+                        boolean startIndexFlag = false, endIndexFlag = false;   
+
                         if(iAssetLink.toLowerCase().contains("youtu.be")) /*  Short link  */
                         {                            
                             startIndex = iAssetLink.indexOf("youtu.be/") + 9;
                             endIndex = iAssetLink.length();
 
                             oAssetLink += iAssetLink.substring(startIndex, endIndex);
-
-                            slideProperties.put("asset", oAssetLink);
                         } 
-                        else /*  Full link/embed link  */
+                        else if (iAssetLink.toLowerCase().contains("embed")) /*  Embed link  */
+                        {
+                            oAssetLink = iAssetLink;
+                        }
+                        else if (iAssetLink.toLowerCase().contains("watch")) /*  Full link  */
                         {
                             for(int i = 0; i < iAssetLink.length(); i++)
                             {
@@ -74,21 +75,24 @@ public class CarouselCustomImpl implements CarouselCustom {
                                 }                        
                             }
     
-                            if(startIndex == 0)
-                            {
-                                oAssetLink = iAssetLink;
-                            } else if (endIndex == 0)
+                            if (endIndex == 0) /* Watchlist not included in the link */
                             {
                                 endIndex = iAssetLink.length();
                                 oAssetLink += iAssetLink.substring(startIndex, endIndex);
-                            } else {
+                            } 
+                            else /* Watchlist included in the link */
+                            {
                                 oAssetLink += iAssetLink.substring(startIndex, endIndex);
                             }
-                            
-                            slideProperties.put("asset", oAssetLink);
-                        }                        
+                        }
+                        else // Invalid link
+                        {
+                            oAssetLink = "https://www.youtube.com/embed/oRhRrQIy96c";
+                        }
+
+                        slideProperties.put("asset", oAssetLink);                        
                     }
-                    else // Video/Image
+                    else // video/image
                     {                        
                         slideProperties.put("asset", slide.getValueMap().get("asset", String.class));
                     }
