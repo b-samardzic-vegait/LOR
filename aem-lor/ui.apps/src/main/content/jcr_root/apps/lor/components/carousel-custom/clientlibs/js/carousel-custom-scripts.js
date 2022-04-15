@@ -21,11 +21,11 @@ const carouselcustom = {
     rte: function() {
         let contents = $('.js-carouselcustom-full-width');
 		contents.each(function() {
-            const tag = $(this).find('pre').html();
-            const title = $(this).find('h2').html();
-            const text = $(this).find('p').html();
-            const linkText = $(this).find('a').html();
-            const linkTarget = $(this).find('a').attr('href');
+            const tag = $(this).find('pre').html() ? $(this).find('pre').html() : '';
+            const title = $(this).find('h2').html() ? $(this).find('h2').html() : '';
+            const text = $(this).find('p').html() ? $(this).find('p').html() : '';
+            const linkText = $(this).find('a').html() ? $(this).find('a').html() : 'Read more';
+            const linkTarget = $(this).find('a').attr('href') ? $(this).find('a').attr('href') : '';
             $(this).html('<span class="carouselcustom__tag carouselcustom__animation-fade-down">' + tag + '</span><div class="carouselcustom__title-wrap"><h2 class="carouselcustom__title carouselcustom__header carouselcustom__animation-text-rises">' + title + '</h2></div><p class="carouselcustom__text carouselcustom__paragraph">' + text + '</p><a href="' + linkTarget + '" class="carouselcustom__btn carouselcustom__link"><span class="carouselcustom__btn-outline carouselcustom__color-black">' + linkText + '</span><span class="carouselcustom__color-black"><img src="/content/dam/lor/resources/ico-arrow.svg" class="carouselcustom__arrow-icon"></img></span></a><span class="carouselcustom__progress carouselcustom__animation-progress js-carouselcustom-progress"></span>');
         })
     },
