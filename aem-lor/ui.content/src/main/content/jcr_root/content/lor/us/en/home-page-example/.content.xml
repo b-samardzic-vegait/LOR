@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-31T14:25:50.571+02:00"
+        cq:lastModified="{Date}2022-04-15T13:58:09.350+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/lor/settings/wcm/templates/homepage"
         jcr:primaryType="cq:PageContent"
@@ -613,6 +613,43 @@
                             width="12"/>
                     </cq:responsive>
                 </container>
+                <carousel_custom
+                    cq:styleIds="[1650020717027,1650020785272]"
+                    jcr:created="{Date}2022-04-12T15:53:56.560+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-15T10:48:46.043+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="lor/components/carousel-custom"
+                    textIsRich="[true,true,true,true,true]">
+                    <carousel jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            asset="/content/dam/lor/img3.jpg"
+                            assetType="image"
+                            richTextEditor="&lt;pre>&#xa;SCOTLAND&#xa;&lt;/pre>&#xa;&lt;h2>Dumfries &amp;amp; Galloway Hospital&lt;/h2>&#xa;&lt;p>Diam cubilia ac eu magna adipiscing natoque nec venenatis parturient&lt;/p>&#xa;&lt;p>&lt;a href=&quot;/content/lor/us/en/sitemap.html&quot;>Read more&lt;/a>&lt;/p>&#xa;"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            asset="/content/dam/lor/img1.jpg"
+                            assetType="image"
+                            richTextEditor="&lt;p>text 2&lt;/p>&#xd;&#xa;"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            asset="/content/dam/lor/banner-img.jpg"
+                            assetType="image"
+                            richTextEditor="&lt;p>text 3&lt;/p>&#xd;&#xa;"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            asset="https://www.youtube.com/embed/uLrSMMPDi8M"
+                            assetType="youtubevideo"
+                            richTextEditor="&lt;p>text 4&lt;/p>&#xd;&#xa;"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            asset="/content/dam/lor/video.mp4"
+                            assetType="video"
+                            richTextEditor="&lt;p>text 5&lt;/p>&#xd;&#xa;"/>
+                    </carousel>
+                </carousel_custom>
             </container>
         </root>
     </jcr:content>

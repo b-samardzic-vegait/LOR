@@ -5,14 +5,14 @@ $(window).on('load', () => {
 });
 
 $(document).ready(() => {
-    hero.init();
+    carouselcustom.init();
 });
 
-const hero = {
-	$window: $(window),
-	$slider: $('.js-carouselcustom-slider'),
-	$slides: $('.js-carouselcustom-slide'),
-	$heroImage: $('.js-carouselcustom-responsive-image'),
+const carouselcustom = {
+	$carouselcustomwindow: $(window),
+	$carouselcustomslider: $('.js-carouselcustom-slider'),
+	$carouselcustomslides: $('.js-carouselcustom-slide'),
+	$carouselcustomheroImage: $('.js-carouselcustom-responsive-image'),
 	activeClass: 'carouselcustom__animation--started',
 	pauseClass: 'carouselcustom__animation--paused',
 	interval: 8000,
@@ -31,7 +31,7 @@ const hero = {
     },
 
 	init: function() {
-		if (!this.$slider.length) return;
+		if (!this.$carouselcustomslider.length) return;
 		this.setMobileImage();
 		this.loadSlider();
 		this.playSliderOnScroll();
@@ -74,7 +74,7 @@ const hero = {
 
 	loadSlider: function() {
 		const _this = this;
-		this.$slider.each(function() {
+		this.$carouselcustomslider.each(function() {
 			_this.initFirst(this);
 			const slides = $(this).find('.js-carouselcustom-slide');
 			const $slidePlayBtn = $(this).find('.js-carouselcustom-slider-btn');
@@ -152,13 +152,13 @@ const hero = {
 
 	playSliderOnScroll: function() {
 		let isLoaded = false;
-		this.$window.on('load scroll', () => {
+		this.$carouselcustomwindow.on('load scroll', () => {
 			if (isLoaded) return;
-			this.$slider.each((i, item) => {
+			this.$carouselcustomslider.each((i, item) => {
 				const $item = $(item);
 				const isSection = $(item).data('section');
 				const $slidePlayBtn = $(item).find('.js-carouselcustom-slider-btn');
-				const animationPoint = this.$window.scrollTop() + (this.$window.height() * 0.6);
+				const animationPoint = this.$carouselcustomwindow.scrollTop() + (this.$carouselcustomwindow.height() * 0.6);
 				const itemOffset = $item.offset().top;
 				if (animationPoint > itemOffset && isSection) {
 					$slidePlayBtn.trigger('click');
@@ -171,13 +171,13 @@ const hero = {
 
 	setMobileImage: function() {
 		const windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
-		if (!this.$heroImage.length || windowWidth > 767) return;
-		this.$heroImage.each((i, item) => {
+		if (!this.$carouselcustomheroImage.length || windowWidth > 767) return;
+		this.$carouselcustomheroImage.each((i, item) => {
 			const itemImage = $(item).data('mobile-image');
 			$(item).css('background-image', 'url("' + itemImage + '")');
 		});
-		this.$slider.find('.js-video').remove();
-		this.$slider.find('.js-iframe').remove();
+		this.$carouselcustomslider.find('.js-video').remove();
+		this.$carouselcustomslider.find('.js-iframe').remove();
 	}
 };
 

@@ -440,7 +440,7 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_16975837857700>
                 <policy_1646394451778
-                    jcr:lastModified="{Date}2022-03-28T12:50:31.066+02:00"
+                    jcr:lastModified="{Date}2022-04-15T10:46:50.316+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Media Teaser Policy"
@@ -732,6 +732,96 @@
                 </policy_1647522391880>
             </ticketlatest>
             <expertisecontainer jcr:primaryType="nt:unstructured"/>
+            <carousel-custom jcr:primaryType="nt:unstructured">
+                <policy_1650016340815
+                    jcr:lastModified="{Date}2022-04-15T13:07:00.126+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Carousel Custom Policy"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Card"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="carouselcustom-style__card--top-left"
+                                    cq:styleId="1650019937093"
+                                    cq:styleLabel="Top Left"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="carouselcustom-style__card--bottom-left"
+                                    cq:styleId="1650019973985"
+                                    cq:styleLabel="Bottom Left"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="carouselcustom-style__card--top-right"
+                                    cq:styleId="1650020717027"
+                                    cq:styleLabel="Top Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="carouselcustom-style__card--bottom-right"
+                                    cq:styleId="1650020728987"
+                                    cq:styleLabel="Bottom Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="carouselcustom-style__card--hidden"
+                                    cq:styleId="1650020736366"
+                                    cq:styleLabel="Hidden"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Controls"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="carouselcustom-style__controls--top-right"
+                                    cq:styleId="1650020163758"
+                                    cq:styleLabel="Top Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="carouselcustom-style__controls--bottom-right"
+                                    cq:styleId="1650020165659"
+                                    cq:styleLabel="Bottom Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="carouselcustom-style__controls--top-left"
+                                    cq:styleId="1650020781297"
+                                    cq:styleLabel="Top Left"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="carouselcustom-style__controls--bottom-left"
+                                    cq:styleId="1650020785272"
+                                    cq:styleLabel="Bottom Left"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Height"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="carouselcustom-style__height--large"
+                                    cq:styleId="1650020471537"
+                                    cq:styleLabel="Large"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="carouselcustom-style__height--medium"
+                                    cq:styleId="1650020474767"
+                                    cq:styleLabel="Medium"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="carouselcustom-style__height--small"
+                                    cq:styleId="1650020478928"
+                                    cq:styleLabel="Small"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
+                    </cq:styleGroups>
+                </policy_1650016340815>
+            </carousel-custom>
         </components>
     </lor>
     <cq jcr:primaryType="nt:unstructured">
