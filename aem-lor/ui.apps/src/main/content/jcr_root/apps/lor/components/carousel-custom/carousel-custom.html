@@ -1,40 +1,40 @@
 <div 
     data-sly-use.carouselCustom="com.adobe.aem.guides.wknd.core.models.CarouselCustom">
-
-    <section class="hero js-slider">
-        <div class="hero__slider" data-sly-list.item="${carouselCustom.carousel}">
-            <div class="hero__slide animation animation--slide js-slide">
-                <div class="hero__image animation__image has-cover js-responsive-image" style="background-image: url('assets/images/content/banner-img.jpg');" data-mobile-image="assets/images/content/expertise1.jpg"></div>
-                <div class="hero__content animation__fade js-full-width">
-                    <span class="hero__tag tag animation__fade-down">
-                        ${item.richTextEditor @ context = 'html'}
-                    </span>
-                    <div class="hero__title-wrap">
-                        <h2 class="hero__title animation__text-rises">Dumfries &amp; Galloway Hospital</h2>
-                    </div>
-                    <p class="hero__text animation__fade ">Diam cubilia ac eu magna adipiscing natoque nec venenatis parturient</p>
-                    <a href="javscript:;" class="btn animation__fade">
-                        <span class="icon font-ico-arrow"></span>
-                        <span class="btn__outline">Read more</span>
-                    </a>
-                    <span class="hero__progress animation__progress js-progress" aria-hidden="true"></span>
+	<sly data-sly-resource="${resource @ resourceType='wcm/foundation/components/responsivegrid'}" data-sly-test="${(wcmmode.edit)}"></sly>
+	<sly data-sly-test="${(wcmmode.disabled)}">
+	<section class="carouselcustom js-carouselcustom-slider">
+        <div class="carouselcustom__slider" data-sly-list.item="${carouselCustom.carousel}">
+            <div class="carouselcustom__animation--block js-carouselcustom-slide">
+   				<sly data-sly-test.image="${item.assetType == 'image'}"
+					data-sly-use.imageTemplate="image.html"
+                    data-sly-call="${imageTemplate.image @ item=item}">
+				</sly>
+				<sly data-sly-test.video="${item.assetType == 'video'}"
+					data-sly-use.videoTemplate="video.html"
+					data-sly-call="${videoTemplate.video @ item=item}">
+				</sly>
+				<sly data-sly-test.youtubevideo="${item.assetType == 'youtubevideo'}"
+					data-sly-use.youtubevideoTemplate="youtubevideo.html"
+					data-sly-call="${youtubevideoTemplate.youtubevideo @ item=item}">
+				</sly>
+                <div class="carouselcustom__content js-carouselcustom-full-width">
+					${item.richTextEditor @ context = 'html'}
                 </div>
-                <div class="hero__video-wrap js-iframe" data-iframe="https://player.vimeo.com/video/385932102" data-auto="true"></div>
+
             </div>
         </div>
-        <div class="controls">
-            <div class="controls__counter">
-                <span class="controls__current js-slider-current"></span>
-                <span class="controls__total js-slider-total"></span>
-            </div>
-            <button class="controls__btn controls__btn--play js-slider-btn" type="button" aria-label="Pause">
-                <span class="icon font-ico-pause" aria-hidden="true"></span>
-                <span class="sr-only">Pause slide</span>
-            </button>
-            <button class="controls__btn controls__btn--skip js-slider-next" type="button" aria-label="Next">
-                <span class="icon font-ico-skip" aria-hidden="true"></span>
-                <span class="sr-only">Next slide</span>
-            </button>
+        <div class="carouselcustom__controls">
+         <div class="carouselcustom__controls-counter">
+             <span class="carouselcustom__controls-current js-carouselcustom-slider-current"></span>
+             <span class="carouselcustom__controls-total js-carouselcustom-slider-total"></span>
+         </div>
+         <button class="carouselcustom__button carouselcustom__controls-btn carouselcustom__controls-btn--play js-carouselcustom-slider-btn" type="button" aria-label="Pause">
+             <img class="carouselcustom__pause-img carouselcustom__pause" src="/content/dam/lor/resources/ico-pause.svg">
+         </button>
+         <button class="carouselcustom__button carouselcustom__controls-btn carouselcustom__controls-btn--skip js-carouselcustom-slider-next" type="button" aria-label="Next">
+             <img class="carouselcustom__skip-img carouselcustom__skip" src="/content/dam/lor/resources/ico-skip.svg">
+         </button>
         </div>
     </section>
+	</sly>
 </div>
